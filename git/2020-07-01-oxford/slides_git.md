@@ -1,12 +1,6 @@
-# 2016-01-17 Software Carpentry Workshop: git
+# 2020-07-01 Software Carpentry Workshop: git
 
 ----
-
-Please use the EtherPad to take communal notes:
-
-[http://pad.software-carpentry.org/2017-01-09-dundee](http://pad.software-carpentry.org/2017-01-09-dundee)
-
----
 
 ## Let me tell you a story...
 
