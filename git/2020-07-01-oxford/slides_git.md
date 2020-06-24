@@ -388,7 +388,7 @@ git add -f b.dat
 
 ---
 
-## Remotes in GitHub
+## Remotes in GitHub
 
 ----
 
@@ -482,7 +482,7 @@ git pull origin master
 
 ---
 
-## GitHub collaboration
+## GitHub collaboration
 
 ----
 
