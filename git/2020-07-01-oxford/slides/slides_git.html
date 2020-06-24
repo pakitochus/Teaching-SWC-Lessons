@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <title>reveal-md</title>
-    <link rel="stylesheet" href="./css/reveal.css" />
-    <link rel="stylesheet" href="./css/theme/white.css" id="theme" />
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/white.css" id="theme" />
     <link rel="stylesheet" href="./css/highlight/zenburn.css" />
-    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
 
   </head>
   <body>
@@ -64,7 +63,7 @@ The lab notebook of code development.
 ### Multiple editors (branching)
 
 * Two people work on a document
-  * Each makes independent changes: two versions
+  * Each makes their changes: docs diverge
   
 ![Three documents. On the left is the original, and on the right are two versions of this with different, and conflicting, changes](img/versions.png)
 
@@ -83,9 +82,9 @@ The lab notebook of code development.
    * track changes
    * store metadata (who, when)
    * record 'versions' (a.k.a. *commits*)
-* The complete history of *commits* and metadata is a *repository*
-* CVS, Subversion, RCS: legacy systems
-* `git`, Mercurial: modern *distributed* VC tools
+   * give you access to any of those versions
+
+`git` is a version control system.
 </script></section></section><section ><section data-markdown><script type="text/template">
 ## Setting up `git`
 </script></section><section data-markdown><script type="text/template">
@@ -106,11 +105,7 @@ git config --global user.name "Vlad Dracul"
 git config --global user.email "vlad@tran.sylvan.ia"
 git config --global color.ui "auto"
 git config --global core.editor "nano -w"
-git config --global core.editor \
-"'C:\Program Files (x86)\Notepad++\notepad++.exe' \
--multiInst -notabbar -nosession -noPlugin"
 ```
-[http://pad.software-carpentry.org/2016-10-17-edinburgh](http://pad.software-carpentry.org/2016-10-17-edinburgh)
 </script></section></section><section ><section data-markdown><script type="text/template">
 ## Creating a repository
 </script></section><section data-markdown><script type="text/template">
@@ -535,8 +530,13 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 </script></section></section></div>
     </div>
 
-    <script src="./js/reveal.js"></script>
+    <script src="./dist/reveal.js"></script>
 
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
     <script>
       function extend() {
         var target = {};
@@ -551,16 +551,6 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
         return target;
       }
 
-      // Optional libraries used to extend on reveal.js
-      var deps = [
-        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
-        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
-        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-        { src: './plugin/zoom-js/zoom.js', async: true },
-        { src: './plugin/notes/notes.js', async: true },
-        { src: './plugin/math/math.js', async: true }
-      ];
-
       // default options to init reveal.js
       var defaultOptions = {
         controls: true,
@@ -568,11 +558,17 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
         history: true,
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
-        dependencies: deps
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
       };
 
       // options from URL query string
-      var queryOptions = Reveal.getQueryHash() || {};
+      var queryOptions = Reveal().getQueryHash() || {};
 
       var options = extend(defaultOptions, {}, queryOptions);
     </script>

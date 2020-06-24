@@ -67,7 +67,7 @@ The lab notebook of code development.
 ### Multiple editors (branching)
 
 * Two people work on a document
-  * Each makes independent changes: two versions
+  * Each makes their changes: docs diverge
   
 ![Three documents. On the left is the original, and on the right are two versions of this with different, and conflicting, changes](img/versions.png)
 
@@ -90,9 +90,9 @@ The lab notebook of code development.
    * track changes
    * store metadata (who, when)
    * record 'versions' (a.k.a. *commits*)
-* The complete history of *commits* and metadata is a *repository*
-* CVS, Subversion, RCS: legacy systems
-* `git`, Mercurial: modern *distributed* VC tools
+   * give you access to any of those versions
+
+`git` is a version control system.
 
 ---
 
@@ -119,11 +119,7 @@ git config --global user.name "Vlad Dracul"
 git config --global user.email "vlad@tran.sylvan.ia"
 git config --global color.ui "auto"
 git config --global core.editor "nano -w"
-git config --global core.editor \
-"'C:\Program Files (x86)\Notepad++\notepad++.exe' \
--multiInst -notabbar -nosession -noPlugin"
 ```
-[http://pad.software-carpentry.org/2016-10-17-edinburgh](http://pad.software-carpentry.org/2016-10-17-edinburgh)
 
 ---
 
