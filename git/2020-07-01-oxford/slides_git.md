@@ -39,7 +39,7 @@ The lab notebook of code development.
 
 ----
 
-### Learning objectives
+### Learning objectives
 
 * Understand the basics of automated version control
 * Understand the basics of `git`
@@ -100,7 +100,7 @@ The lab notebook of code development.
 
 ----
 
-### Learning objectives
+### Learning objectives
 
 * Configure `git` for first use on a computer
 * Understand `git config --global`
