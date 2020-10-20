@@ -124,7 +124,7 @@ Speaker Notes for the 2016-01-09 Software Carpentry git lesson
 lpritc@Totoro:~$ git config --global user.name "Leighton Pritchard"
 lpritc@Totoro:~$ git config --global user.email "leighton.pritchard@hutton.ac.uk"
 lpritc@Totoro:~$ git config --global color.ui "auto"
-lpritc@Totoro:~$ git config --global core.editor "nano -w"
+lpritc@Totoro:~$ git config --global core.editor "code --wait"
 (git config --global core.editor "'C:\Program Files (x86)\Notepad++\notepad++.exe' \
                                  -multiInst -notabbar -nosession -noPlugin")
 ```

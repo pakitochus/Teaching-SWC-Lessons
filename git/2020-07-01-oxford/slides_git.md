@@ -118,7 +118,7 @@ The lab notebook of code development.
 git config --global user.name "Vlad Dracul"
 git config --global user.email "vlad@tran.sylvan.ia"
 git config --global color.ui "auto"
-git config --global core.editor "nano -w"
+git config --global core.editor "code --wait"
 ```
 
 ---
@@ -170,7 +170,7 @@ git status
 **Live Presentation**
 
 ```
-nano mars.txt
+code mars.txt
 ```
 
 ----
@@ -210,7 +210,7 @@ git log
 **Live Presentation**
 
 ```
-nano mars.txt
+code mars.txt
 git diff
 git add mars.txt
 git diff
@@ -381,7 +381,7 @@ touch a.dat results/a.out
 **Live Presentation**
 
 ```
-nano .gitignore
+code .gitignore
 git status --ignored
 git add -f b.dat
 ```
@@ -518,7 +518,7 @@ git remote -v
 
 ```
 cd planets
-nano pluto.txt
+code pluto.txt
 git add pluto.txt
 git commit -m "Notes on Pluto"
 git push origin master
@@ -586,10 +586,10 @@ git pull origin master
 
 ```
 cd ~/planets
-nano mars.txt
+code mars.txt
 git push origin master
 cd /tmp/planets
-nano mars.txt
+code mars.txt
 git push origin master
 ```
 
