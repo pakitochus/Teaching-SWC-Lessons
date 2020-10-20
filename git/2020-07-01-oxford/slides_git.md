@@ -292,8 +292,21 @@ git commit
 **Live Presentation**
 
 ```
-git diff HEAD~1 mars.txt
-git diff HEAD~2 mars.txt
+git diff HEAD~1..HEAD mars.txt
+git diff HEAD~2..HEAD~1 mars.txt
+```
+
+----
+
+### History with `git diff`
+
+* We can also compare the working copy with `HEAD`, or with any commit
+
+**Live Presentation**
+
+```
+git diff
+git diff HEAD~2
 ```
 
 ----
