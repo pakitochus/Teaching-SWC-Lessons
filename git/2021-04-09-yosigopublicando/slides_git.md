@@ -1,116 +1,116 @@
-# 2020-07-01 Software Carpentry Workshop: git
+# 2021-04-08 GIT en #yosigopublicando
 
 ----
 
-## Let me tell you a story...
+## Os voy a contar una historia...
 
 ----
 
-### Once upon a time...
+### Hace mucho tiempo...
 
-* Wolfman and Dracula were been hired to plan a Mars mission (obviously)
-* Wolfman and Dracula live on different continents
-* They work on the same plan at the same time
-* How to manage this?
-  * take turns on each file?
-  * email copies?
-* The solution? **Version Control** 
+* Hombre Lobo y Dracula han sido contratados para planear una misión a Marte. 
+* Hombre Lobo y Dracula viven en diferentes continentes.
+* Trabajan en el mismo plan al mismo tiempo.
+* Cómo lo gestionamos?
+  * Hacemos turnos para cada archivo?
+  * Mandamos copias por email?
+* La solución? **Control de versiones** 
 
 ----
 
-### Advantage of version control
+### Ventajas del Control de versiones
 
-* Nothing that is committed is *ever* lost (unless you try…)
-* We can record who made which changes, and when
-* We can revert to previous versions.
-* We can identify and correct conflicts
+* Nada se pierde una vez que se incluye bajo control de versiones (a menos que lo intentes fuertemente…)
+* Sabemos quien y cuando se hicieron cambios
+* Se pueden revertir a versiones anteriores.
+* Podemos identificar y corregir conflictos
 
-The lab notebook of code development.
+El cuaderno de laboratorio virtual!
 
 ---
 
-## Version control with `git`
+## Control de versiones con `git`
 
 ----
 
-### What lies ahead…?
+### Que nos queda…?
 
 ![XKCD comic - A: This is git. It tracks collaborative work on projects through a beautiful distributed graph theory tree mode; B: Cool. How do we use it?; A: No idea. Just memorise these shell commands and type them to sync up. If you get errors, save your work elsewhere, delete the project, and download a gresh copy.](img/git.png)
 
 ----
 
-### Learning objectives
+### Objetivos de aprendizaje
 
-* Understand the basics of automated version control
-* Understand the basics of `git`
+* Comprender los beneficios de usar un sistema automático de control de versiones.
+* Comprender los fundamentos básicos del funcionamiento de Git.
 
 ----
 
-### Do you recognise this?
+### Reconoces esto?
 
-(i.e. have you *ever* worked on the same document as someone else?)
+(p. ej., has trabajado en el mismo documento a la vez que otra persona?)
 
 ![PhD comic: "Final".doc - files are called: Final.doc, Final_rev.2.doc, FINAL_rev.6.COMMENTS.doc, FINAL_rev.8.commens5.CORRECTIONS.doc, FINAL_rev.18.comment7.corrections9.MORE.30.doc, FINAL_rev.22.comments49.corrections.10.WHYDIDICOMETOGRADSCHOOL.doc](img/phd101212s_small.gif)
 
 ----
 
-### How version control works
+### Cómo funciona el control de versiones
 
-* Version control is like a 'recording' of history
+* Control de versiones es como una 'grabación' de la historia
 
 ![Three documents. The first has two paragraphs. The second has a modified paragraph. The third has an additional paragraph](img/play-changes.png)
 
-* Rewind and play back changes
+* Rebobina y reproduce los cambios
 
 ----
 
-### Multiple editors (branching)
+### Múltiples editores (branching)
 
-* Two people work on a document
-  * Each makes their changes: docs diverge
+* Dos personas trabajan en un documento
+  * Cada uno hace sus cambios: los documentos divergen
   
 ![Three documents. On the left is the original, and on the right are two versions of this with different, and conflicting, changes](img/versions.png)
 
-* Changes are separate from the document
+* Los cambios se separan del documento
 
 ----
 
-### Combining changes (merging)
+### Combinando los cambios (merging)
 
-* Several changes can be merged onto the same base document
+* Varios cambios se pueden mezclar (*merge*) en el mismo documento base
   * 'Merging'
 
 ![Three documents. On the left are the two modified documents from the previous slide. On the right is a single that incorporates both of those changes](img/merge.png)
 
 ----
 
-### What version control systems do
+### Lo que hace el sistema de control de versiones
 
-* Version control systems manage this process
-   * track changes
-   * store metadata (who, when)
-   * record 'versions' (a.k.a. *commits*)
-   * give you access to any of those versions
+* Los sistemas de control de versiones gestionan el proceso:
+   * rastrean los cambios
+   * almacenan metadatos (quién, cuándo)
+   * guardan 'versiones' (a.k.a. *commits*)
+   * dan acceso a cada una de estas versiones
 
-`git` is a version control system.
+`git` es un sistema de control de versiones (hay más).
 
 ---
 
-## Setting up `git`
+## Configurando `git`
 
 ----
 
-### Learning objectives
+### Objetivos de aprendizaje
 
-* Configure `git` for first use on a computer
-* Understand `git config --global`
-
+* Configurar `git` la primera vez que utilice la computadora.
+* Comprender el significado del flag de configuración `--global`.
 ----
 
-### Setting global options
+### Configurando opciones globales
 
-* `git` needs to know who you are for metadata
-* `git` wants your preferences for display/editing
+* `git` necesita saber quién eres para los metadatos
+* `git` quiere saber tus preferencias para mostrar/editar
+* queremos configurarlo globalmente
 
 **Live Presentation**
 
@@ -140,7 +140,7 @@ git config --global core.editor "code --wait"
 ### Creating a `git` repository
 
 * A fictional project about planets
-  * (Wolfman and Dracula…)
+  * (Hombre Lobo and Dracula…)
 
 **Live Presentation**
 
@@ -165,12 +165,12 @@ git status
 ### My first untracked file
 
 * We'll create a file, but do nothing with it
-  * "Is Mars suitable as a space base?" 
+  * "Is Marte suitable as a space base?" 
 
 **Live Presentation**
 
 ```
-code mars.txt
+code Marte.txt
 ```
 
 ----
@@ -183,8 +183,8 @@ code mars.txt
 **Live Presentation**
 
 ```
-git add mars.txt
-git commit -m "start notes on Mars as a base"
+git add Marte.txt
+git commit -m "start notes on Marte as a base"
 git log
 ```
 
@@ -210,9 +210,9 @@ git log
 **Live Presentation**
 
 ```
-code mars.txt
+code Marte.txt
 git diff
-git add mars.txt
+git add Marte.txt
 git diff
 git commit
 ```
@@ -234,7 +234,7 @@ git commit
 
 ### Challenge 1 (5min)
 
-* Make a one-line change to `mars.txt`.
+* Make a one-line change to `Marte.txt`.
 * Create file `earth.txt` with one-line comment on Earth.
 * Commit both changes (*as a **single*** `commit`)
 
@@ -292,8 +292,8 @@ git commit
 **Live Presentation**
 
 ```
-git diff HEAD~1..HEAD mars.txt
-git diff HEAD~2..HEAD~1 mars.txt
+git diff HEAD~1..HEAD Marte.txt
+git diff HEAD~2..HEAD~1 Marte.txt
 ```
 
 ----
@@ -318,8 +318,8 @@ git diff HEAD~2
 **Live Presentation**
 
 ```
-git diff d22195b9ec3c8fb4c2ce0f52f344b95ce5d0d0e3 mars.txt
-git diff d221 mars.txt
+git diff d22195b9ec3c8fb4c2ce0f52f344b95ce5d0d0e3 Marte.txt
+git diff d221 Marte.txt
 ```
 
 ----
@@ -332,7 +332,7 @@ git diff d221 mars.txt
 **Live Presentation**
 
 ```
-git checkout HEAD mars.txt 
+git checkout HEAD Marte.txt 
 ```
 
 ----
@@ -415,7 +415,7 @@ git add -f b.dat
 
 ### Remote repositories
 
-* Version control most useful for collaboration
+* Control de versiones most useful for collaboration
   * Easiest to have a single repository
   * Repository may be hosted off-site (for at least one collaborator)
 * Services available:
@@ -587,22 +587,22 @@ git pull origin master
 
 **in your pairs**
 
-* As the *owner*: add a line to `mars.txt`
+* As the *owner*: add a line to `Marte.txt`
   * Commit and push the change
 
 **then**
   
-* As the *collaborator*: add a line to `mars.txt`
+* As the *collaborator*: add a line to `Marte.txt`
   * Commit and push the change
 
 **Live Presentation**
 
 ```
 cd ~/planets
-code mars.txt
+code Marte.txt
 git push origin master
 cd /tmp/planets
-code mars.txt
+code Marte.txt
 git push origin master
 ```
 
@@ -645,7 +645,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 ## Wrapping up
 
-* GitHub/version control can be an open electronic lab book as part of Open Science workflows
+* GitHub/Control de versiones can be an open electronic lab book as part of Open Science workflows
   * Collect data - store in OA repository (Zenodo/FigShare)
   * Use GitHub to store work in progress: analysis lab book
   * Post preprint to (Bio)arXiv
