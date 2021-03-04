@@ -13,12 +13,18 @@ All of this work derives from the original Software and Data Carpentry lessons, 
 ## Slide and Notes sets
 
 ### Git
+* **2021-09-04 #yosigopublicando**
+  * [Git lesson](./git/2021-04-09-yosigopublicando/slides/index.html)
+  * [Git notes](./git/2021-04-09-yosigopublicando/slides/speaker_notes.pdf)
+
+### Base materials: 
+#### Git
 
 * **2017-01-09 Dundee:**
   * [Git lesson slides](./git/2017-01-09-dundee/slides/index.html)
   * [Git lesson notes](./git/2017-01-09-dundee/speaker_notes.pdf)
   * 
-### Python
+#### Python
 
 * **2017-05-18 St Andrews:**
   * [Python lesson 01 slides](./python/2017-05-18-standrews/python-01/slides.html)
@@ -28,7 +34,7 @@ All of this work derives from the original Software and Data Carpentry lessons, 
   * [Reproducible Research](./python/2017-05-18-standrews/python-02/slides-reproducible_research.html)
   * [NLTK examples](./python/2017-05-18-standrews/extras/nltk_example.html)  
 
-### R
+#### R
 
 * **2017-12-04 St Andrews:**
   * [R lesson slides](./R/2017-12-04-standrews/hybrid_lesson_slides.html)
