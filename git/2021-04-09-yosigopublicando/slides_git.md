@@ -356,7 +356,7 @@ git diff d221 Marte.txt
 
 * En github: 
 
-![Tres documentos. A la izquierda está el original. En el medio está ese documento con una línea cambiada. A la derecha está el documento del medio con un párrafo extra añadido. Las flechas indican que los documentos están relacionados en el orden de la historia.](img/play-changes.png)
+![Tres documentos. A la izquierda está el original. En el medio está ese documento con una línea cambiada. A la derecha está el documento del medio con un párrafo extra añadido. Las flechas indican que los documentos están relacionados en el orden de la historia.](img/historial_commit_github.png)
 
 ----
 
