@@ -450,7 +450,6 @@ git add -f b.dat
 ### Objetivos de aprendizaje
 
 * Qué son los repositorios remotos y por qué son útiles
-* Clonar un repositorio remoto
 * Hacer `push` y `pull` en un repositorio remoto
 
 ----
@@ -502,7 +501,7 @@ git init
 
 ----
 
-### Conectando el repo local y remoto
+### Conectando el repo local al remoto
 
 * Le decimos al repo *local* que el de Github es su repositorio *remoto*.
   * `origin` es el apodo local para el repositorio remoto (una elección habitual)
@@ -517,17 +516,17 @@ git push origin master
 
 ----
 
-### Remote GitHub repo after first *push*
+### El GitHub remoto tras el primer *push*
 
-* We only *push* the repository, not the staging area
+* Sólo hemos hecho *push* del repositorio, no de la *staging area*
 
-![Two repositories. At the top, the local `planets` repository (belonging to Vlad), which contains files in the staging area and repository. At the bottom, the remote `GitHub` repository, which contains the same repostitory as the local repo - but *not* the staging area](img/github-repo-after-first-push.png)
+![Dos repositorios. En la parte superior, el repositorio local `planets` (perteneciente a Vlad), que contiene los archivos del área de preparación y del repositorio. En la parte inferior, el repositorio remoto `GitHub`, que contiene el mismo repositorio que el repo local - pero *no* el área de preparación](img/github-repo-after-first-push.png)
 
 ----
 
-### My first remote *pull*
+### Mi primer *pull* remoto
 
-* To synchronise the local repo with the remote repo, we *pull*
+* Para sincronizar el repo local con el remoto, hacemos *pull* (tiramos)
 
 **Presentación**
 
@@ -537,75 +536,75 @@ git pull origin master
 
 ---
 
-## Colaboración en GitHub
+## Trabajos en colaboración
 
 ----
 
 ### Objetivos de aprendizaje
-
-* Collaborate pushing changes to someone else's remote repository
+* Clonar un repositorio remoto.
+* Colaborar en crear un repositorio común.
 
 ----
 
-### Starting a collaboration
+### Comenzar una colaboración
 
-* Pair up as 'owner' and 'collaborator'
-* as *owner*: give GitHub repo access to your collaborator
-* as *collaborator*: clone the *owner*'s repo
+* Colaboración en SWC... Aquí masivo. 
+* Roles: 'owner' (propietario), 'collaborator' (colaborador). 
+* Como *propietario*: dar acceso GitHub a tus colaboradores
+* Como *collaborador*: clonar el repo del *propietario*
 
 **Presentación**
 
 ```
 cd /tmp/
-git clone https://github.com/<collaborator>/planets.git
-git remote -v
+git clone https://github.com/<propietario>/planetas.git
 ```
 
 ----
 
-### Make a collaborative change
+### Hacer cambios colaborativos
 
-**as the *collaborator* **
+* **como *colaborador***:
 
-* Add a file called `pluto.txt` - (content your own)
+* Añade un archivo llamado `pluton.txt`: 
 
 **Presentación**
 
 ```
-cd planets
-code pluto.txt
-git add pluto.txt
-git commit -m "Notes on Pluto"
+cd planetas
+code pluton.txt
+git add pluton.txt
+git commit -m "Notas sobre Pluton"
 git push origin master
 ```
 
 ----
 
-### Pull a collaborator's change
+### `Pull` de cambios de un colaborador
 
-**as the *owner* **
+* **Como *propietario***
 
-* Change back to your **own** repository
-  * Check with `git remote -v`
-* `git pull` the changes made by your collaborator
+* Cambia a tu propio repositorio
+  * Comprueba con `git remote -v`
+* Haz `git pull` para traer los cambios de tu colaborador
 
 **Presentación**
 
 ```
-cd ~/planets/
+cd ~/planetas/
 git pull origin master
 ```
 
 ---
 
-## Resolviendo conflictos `git`
+## Conflictos
 
 ----
 
 ### Objetivos de aprendizaje
 
 * Explicar qué son los conflictos y cuándo pueden ocurrir.
-* Resolver conflictos que resultan de una fusión.
+* Resolver conflictos que resultan de una fusión (*merge*)
 
 ----
 
