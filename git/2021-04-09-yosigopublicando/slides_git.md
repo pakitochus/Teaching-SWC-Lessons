@@ -276,46 +276,46 @@ git commit
 
 ----
 
-### In which I predict the future…
+### En el que predecimos el futuro...
 
 ![XKCD comic: a list of commit messages for a repository that start well, but become progressively more like gibberish, titled "As a project drags on, my `git` commit messages get less and less informative"](img/git_commit.png)
 
 ---
 
-## Exploring history
+## Explorando el historial
 
 ----
 
-### Is history bunk?
+### Es el historial una chorrada?
 
-* How can I identify old versions of files?
-* How do I review changes between commits?
-* How can I recover old file versions?
+* Cómo identificar versiones antiguas de archivos?
+* Cómo reviso los cambios entre `commits`?
+* Cómo recupero versiones antiguas?
 
 ----
 
 ### Objetivos de aprendizaje
 
-* Understand what the `HEAD` of a repository is
-* Identify and use `git` commit numbers
-* Compare various versions of tracked files
-* Restore old versions of files
+* Entender qué es el `HEAD` de un repositorio
+* Identificar y usar los números `git commit` 
+* Comparar varias veriones de archivos en seguimiento
+* Restaurar versiones antiguas de archivos
 
 ----
 
-### Commit history
+### Historial de commits
 
-* Most recent commit: `HEAD`
-* Next-most recent: `HEAD~1`
-* Next-next-most recent: `HEAD~2`
+* El más reciente: `HEAD`
+* El siguiente más reciente: `HEAD~1`
+* El siguiente al siguiente más reciente: `HEAD~2`
 
-![Three documents. On the left is the original. In the middle is that document with one line changed. On the right is the middle document with an extra paragraph added. Arrows indicate that the documents are related in order of history.](img/play-changes.png)
+![Tres documentos. A la izquierda está el original. En el medio está ese documento con una línea cambiada. A la derecha está el documento del medio con un párrafo extra añadido. Las flechas indican que los documentos están relacionados en el orden de la historia.](img/play-changes.png)
 
 ----
 
-### History with `git diff`
+### Historial con `git diff`
 
-* We can use `git diff` to see what changed for a file at each commit
+* Podemos usar `git diff` para ver qué ha cambiado en un archivo para cada `commit`
 
 **Presentación**
 
@@ -326,9 +326,9 @@ git diff HEAD~2..HEAD~1 Marte.txt
 
 ----
 
-### History with `git diff`
+### Historial con `git diff`
 
-* We can also compare the working copy with `HEAD`, or with any commit
+* También podemos comparar la copia actual (*working copy*) con `HEAD`, o con cualquier otro `commit`. 
 
 **Presentación**
 
@@ -339,9 +339,9 @@ git diff HEAD~2
 
 ----
 
-### History with commit IDs
+### Historial con IDs de commit
 
-* We can use the unique ID for a commit in the same way
+* Podemos utilizar el identificador único para un `commit` de la misma forma.
 
 **Presentación**
 
@@ -349,6 +349,14 @@ git diff HEAD~2
 git diff d22195b9ec3c8fb4c2ce0f52f344b95ce5d0d0e3 Marte.txt
 git diff d221 Marte.txt
 ```
+
+----
+
+### Historial con IDs de commit
+
+* En github: 
+
+![Tres documentos. A la izquierda está el original. En el medio está ese documento con una línea cambiada. A la derecha está el documento del medio con un párrafo extra añadido. Las flechas indican que los documentos están relacionados en el orden de la historia.](img/play-changes.png)
 
 ----
 
@@ -661,7 +669,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
   
 * Para resolver:
   * *pull* cambios remotos
-  * *merge* cambios en la *working copy*
+  * *merge* cambios en la copia actual (*working copy*)
   * *push* los cambios *merged*
   
 **Presentación**
