@@ -35,13 +35,19 @@ El cuaderno de laboratorio virtual!
 
 ---
 
+### Disclaimer
+* La terminología de git está en inglés. En algunos casos he intentado traducir los comandos, si estos ayudan a entender. En la práctica nadie usa los términos en castellano. Se me pueden escapar... mucho. 
+* Vamos a usar la versión de línea de comandos que es universal y permite entenderlo bien. Luego hay muchas opciones más fáciles. 
+
+---
+
 ## Control de versiones con `git`
 
 ----
 
 ### Que nos queda…?
 
-![XKCD comic - A: This is git. It tracks collaborative work on projects through a beautiful distributed graph theory tree mode; B: Cool. How do we use it?; A: No idea. Just memorise these shell commands and type them to sync up. If you get errors, save your work elsewhere, delete the project, and download a gresh copy.](img/git.png)
+![XKCD comic - A: Esto es git. Hace un seguimiento del trabajo colaborativo en los proyectos a través de un hermoso modo de árbol de teoría de grafos distribuidos; B: Genial. ¿Cómo lo usamos?; A: Ni idea. Sólo tienes que memorizar estos comandos del shell y escribirlos para sincronizar. Si obtienes errores, guarda tu trabajo en otro lugar, borra el proyecto y descarga una copia de gresh.](img/git.png)
 
 ----
 
@@ -64,7 +70,7 @@ El cuaderno de laboratorio virtual!
 
 * Control de versiones es como una 'grabación' de la historia
 
-![Three documents. The first has two paragraphs. The second has a modified paragraph. The third has an additional paragraph](img/play-changes.png)
+![Tres documentos. El primero tiene dos párrafos. El segundo tiene un párrafo modificado. El tercero tiene un párrafo adicional](img/play-changes.png)
 
 * Rebobina y reproduce los cambios
 
@@ -75,7 +81,7 @@ El cuaderno de laboratorio virtual!
 * Dos personas trabajan en un documento
   * Cada uno hace sus cambios: los documentos divergen
   
-![Three documents. On the left is the original, and on the right are two versions of this with different, and conflicting, changes](img/versions.png)
+![Tres documentos. A la izquierda está el original, y a la derecha hay dos versiones de éste con cambios diferentes y contradictorios](img/versions.png)
 
 * Los cambios se separan del documento
 
@@ -86,7 +92,7 @@ El cuaderno de laboratorio virtual!
 * Varios cambios se pueden mezclar (*merge*) en el mismo documento base
   * 'Merging'
 
-![Three documents. On the left are the two modified documents from the previous slide. On the right is a single that incorporates both of those changes](img/merge.png)
+![Tres documentos. A la izquierda están los dos documentos modificados de la diapositiva anterior. A la derecha hay uno que incorpora esos dos cambios](img/merge.png)
 
 ----
 
@@ -360,10 +366,10 @@ git diff d221 Marte.txt
 
 ----
 
-### Restoring older versions
+### Restaurando versiones antiguas
 
-* How can we restore older versions/backtrack?
-* Let's say we accidentally overwrite a file…
+* Cómo podemos restaurar versiones antiguas?
+* Imagina que sobreescribimos un archivo de forma "accidental"...
 
 **Presentación**
 
@@ -375,42 +381,42 @@ git checkout HEAD Marte.txt
 
 ### `git checkout`
 
-* `git checkout` "checks out" files from the repo
-  * Can use any commit identifier
-  * Check out the commit *before* the edit you want to replace!
+* `git checkout` "comprueba" archivos del repo
+  * Puede usar cualquier commit ID
+  * Comprueba el commit *antes* de la edición que quieres reemplazar!
 
-![On the left is a zone representing the `.git` directory, with three commits in a repository. One commit (HEAD~1, f22b25e) contains changes we want to recover. On the right are two files that are rcovered. An arrow indicates two commands for recovery: `git checkout HEAD~1` and `git checkout f22b25e`](img/git-checkout.png)
+![A la izquierda hay una zona que representa el directorio `.git`, con tres confirmaciones en un repositorio. Un commit (HEAD~1, f22b25e) contiene los cambios que queremos recuperar. A la derecha hay dos archivos que están recuperados. Una flecha indica dos comandos para la recuperación: `git checkout HEAD~1` y `git checkout f22b25e`.](img/git-checkout.png)
 
 ----
 
-### Question
+### Pregunta
 
-- Which command(s) below will let Jennifer recover the last committed version of her Python script called `data_cruncher.py` (but no other files)?
+- Qué comando(s) harán que Manuela recupere la última versión remitida de su script `exprimir_datos.py` (pero ningún otro archivo)?
 
 
 1. `$ git checkout HEAD`
-2. `$ git checkout HEAD data_cruncher.py`
-3. `$ git checkout HEAD~1 data_cruncher.py`
-4. `$ git checkout <unique ID of last commit> data_cruncher.py`
+2. `$ git checkout HEAD exprimir_datos.py`
+3. `$ git checkout HEAD~1 exprimir_datos.py`
+4. `$ git checkout <unique ID of last commit> exprimir_datos.py`
 
 ---
 
-## Ignoring things
+## Ignorando cosas
 
 ----
 
 ### Objetivos de aprendizaje
 
-* Configure `git` to ignore files and directories
-* Understand why this is useful
+* Configurar `git` para que ignore archivos y directorios
+* Entender por qué es útil
 
 ----
 
-### Not all files are useful
+### No todos los archivos son útiles
 
-* Editor backup files
-* Temporary files
-* Intermediate analysis files
+* Archivos de copia de seguridad del editor
+* Archivos temporales
+* Archivos intermedios de análisis
 
 **Presentación**
 
@@ -423,9 +429,9 @@ touch a.dat results/a.out
 
 ### `.gitignore`
 
-* `.gitignore` is a special file in your repository root 
-  * It tells `git` to ignore specified files/directories
-  * It should be committed in your repository
+* `.gitignore` es un archivo especial en la raíz del repositorio
+  * Le dice a `git` que ignore los archivos/carpetas especificados
+  * Debe estar remitido en el repositorio
 
 **Presentación**
 
@@ -437,26 +443,26 @@ git add -f b.dat
 
 ---
 
-## Remotes in GitHub
+## Trabajando en remoto
 
 ----
 
 ### Objetivos de aprendizaje
 
-* What remote repositories are and why they are useful
-* To clone a remote repository
-* To push to and pull from a remote repository
+* Qué son los repositorios remotos y por qué son útiles
+* Clonar un repositorio remoto
+* Hacer `push` y `pull` en un repositorio remoto
 
 ----
 
-### Remote repositories
+### Repositorios remotos
 
-* Control de versiones most useful for collaboration
-  * Easiest to have a single repository
-  * Repository may be hosted off-site (for at least one collaborator)
-* Services available:
+* El control de versiones es muy útil para colaborar
+  * Es más fácil tener un sólo repositorio
+  * Se puede alojar offline (para un solo colaborador)
+* Servicios disponibles:
   * GitHub, BitBucket, GitLab
-* We're using GitHub
+* Usaremos GitHub
 
 ----
 
@@ -466,46 +472,46 @@ git add -f b.dat
 
 ----
 
-### Log in to GitHub
+### Entrar a GitHub
 
-* Register for an account, if you don't have one - then log in
+* Regístrate para una cuenta, si no tienes una - luego entra.
 
 ![Screenshot of widdowquinn GitHub profile](img/lp_github.png)
 
 ----
 
-### Create a remote repository
+### Crear un repositorio remoto
 
-* Essentially, on GitHub's servers:
+* Esencialemnte, en los servidores de GitHub:
 
+**Presentación**
 ```
-mkdir planets
-cd planets
+mkdir planetas
+cd planetas
 git init
 ``` 
 
-**Presentación**
 
 ----
 
-### A freshly-made GitHub repository
+### Un repositorio de GitHub nuevecico!
 
-* There's nothing in the remote repository!
+* No hay nada en el repositorio remoto!
 
-![Two repositories. At the top, the local `planets` repository (belonging to Vlad), which contains files in the staging area and repository. At the bottom, an empty epository, representing the 'clean' repository just created on `GitHub`](img/git-freshly-made-github-repo.png)
+![Dos repositorios. En la parte superior, el repositorio local `planetas` (perteneciente a Vlad), que contiene los archivos del área de preparación y del repositorio. En la parte inferior, un epositorio vacío, que representa el repositorio "limpio" recién creado en `GitHub`.](img/git-freshly-made-github-repo.png)
 
 ----
 
-### Connecting local and remote repositories
+### Conectando el repo local y remoto
 
-* We tell the *local* repository that the GitHub repository is its *remote* repository.
-  * `origin` is a local nickname for the remote repo (a common choice)
-  * Once set up, we *push* changes/history to the remote repo
+* Le decimos al repo *local* que el de Github es su repositorio *remoto*.
+  * `origin` es el apodo local para el repositorio remoto (una elección habitual)
+  * Una vez que lo hacemos, empujamos (*push*) los cambios/historial al repositorio remoto
 
 **Presentación**
 
 ```
-git remote add origin https://github.com/widdowquinn/planets.git
+git remote add origin https://github.com/pakitochus/planets.git
 git push origin master
 ```
 
