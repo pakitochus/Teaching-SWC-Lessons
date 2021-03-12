@@ -1,3 +1,9 @@
+---
+marp: true
+theme: uncover
+paginate: true
+---
+
 # 2021-04-08 GIT en #yosigopublicando
 
 ----
@@ -112,7 +118,7 @@ El cuaderno de laboratorio virtual!
 * `git` quiere saber tus preferencias para mostrar/editar
 * queremos configurarlo globalmente
 
-**Live Presentation**
+**Presentación**
 
 ```
 git config --global user.name "Vlad Dracul"
@@ -123,26 +129,31 @@ git config --global core.editor "code --wait"
 
 ---
 
-## Creating a repository
+## Creando un repositorio
 
 ----
 
-### Learning objectives
+### Objetivos de aprendizaje
 
-* Create a local `git` repository
-* What is in a repository?
-  * files
+* Crear un repositorio `git` local
+* Qué hay en ese repositorio?
+  * archivos
   * commits
-  * metadata
+  * metadatos
 
 ----
 
-### Creating a `git` repository
+### Creando un repositorio `git`
 
-* A fictional project about planets
-  * (Hombre Lobo and Dracula…)
+* Un proyecto de ficción sobre planetas
+  * (Hombre Lobo y Dracula…)
 
-**Live Presentation**
+* Sirve para **todo**: Código, archivos. 
+* Recomiendo Markdown y `pandoc`
+
+----
+
+**Presentación**
 
 ```
 git init
@@ -151,23 +162,23 @@ git status
 
 ---
 
-## Tracking changes
+## Seguimiento de cambios
 
 ----
 
-### Learning objectives
+### Objetivos de aprendizaje
 
-* Practice the modify-add-commit cycle
-* Understand where information is stored, in the `git` workflow
+* Practicar el ciclo `modify-add-commit`
+* Entender dónde se guarda la información dentro del flujo de trabajo de `git`
 
 ----
 
-### My first untracked file
+### Mi primer archivo sin seguimiento
 
-* We'll create a file, but do nothing with it
-  * "Is Marte suitable as a space base?" 
+* Vamos a crear un archivo, pero no haremos nada. 
+  * "Es Marte adecuado como base espacial?" 
 
-**Live Presentation**
+**Presentación**
 
 ```
 code Marte.txt
@@ -175,13 +186,30 @@ code Marte.txt
 
 ----
 
-### My first `git` commit
+### Mi primer `git commit`
+<!-- Scoped style -->
+<style scoped>
+blockquote {
+  size: 13pt;
+  text-align: left;
+}
+</style>
 
-* We tell `git` that it should *track* a file (watch for changes): `git add`
-* We also `git commit` the file (keep a copy of the file in the *repository*, in its current state)
+#### com•mit  (kə mit′),
+>   to give in trust or charge; consign.
+>   to consign for preservation:
+>   > to commit ideas to writing; to commit a poem to memory.
 
-**Live Presentation**
+**remitir**
 
+----
+
+### Mi primer `git commit`
+
+* Decimos a `git` que *siga* un archivo (vigile para cambios): `git add`
+* También hacemos `git commit` al archivo (guarda una copia del archivo en el *repositorio*, en su estado actual)
+
+**Presentación**
 ```
 git add Marte.txt
 git commit -m "start notes on Marte as a base"
@@ -190,24 +218,24 @@ git log
 
 ----
 
-### The staging area
+### El área de preparación (*staging area*)
 
-* We don't always want to commit all changes
-* The *staging area* holds changes we want to commit
-  * (other files may also be changed, but we don't want to commit them)
+* No siempre queremos hacer un "commit" de los cambios
+* El *staging area* contiene los cambios que no queremos hacer "commit".
+  * (otros archivos que también se han cambiado, pero que no queremos remitir)
   
-![On the left is a modified document. On the right is a zone representing the data stored in `.git`. In that zone are two containers: a staging area, and a repository. Using `git add` places the document into the staging area. Using `git commit` moves the document from the staging area into the repository](img/git-staging-area.png)
+![A la izquierda hay un documento modificado. A la derecha hay una zona que representa los datos almacenados en `.git`. En esa zona hay dos contenedores: un área de preparación y un repositorio. Usar `git add` coloca el documento en la zona de preparación. El uso de `git commit` mueve el documento de la zona de preparación al repositorio](img/git-staging-area.png)
 
 ----
 
 ### modify-add-commit
 
-* Now we want to add more information to the file
-  * Modify file
-  * Add file to *staging area* (`git add`)
-  * Commit changes
+* Ahora queremos añadir más información al archivo. 
+  * Modificamos el archivo
+  * Añadimos el archivo al *staging area* (`git add`)
+  * Remitimos los cambios (`git commit`) 
 
-**Live Presentation**
+**Presentación**
 
 ```
 code Marte.txt
@@ -219,30 +247,30 @@ git commit
 
 ----
 
-### Question
+### Pregunta
 
--  Which command(s) below would save changes in `myfile.txt` to the local `git` repository?
+-  Qué comando(s) guardarán los cambios de `myfile.txt` al repositorio `git` local?
 
 
-1. `git commit -m "add recent changes"`
-2. `git init myfile.txt; git commit -m "add recent changes"`
-3. `git add myfile.txt; git commit -m "add recent changes"`
-4. `git commit -m myfile.txt "add recent changes"`
+1. `git commit -m "cambios recientes"`
+2. `git init myfile.txt; git commit -m "cambios recientes"`
+3. `git add myfile.txt; git commit -m "cambios recientes"`
+4. `git commit -m myfile.txt "cambios recientes"`
 
 
 ----
 
-### Challenge 1 (5min)
+### Reto 1 (5min)
 
-* Make a one-line change to `Marte.txt`.
-* Create file `earth.txt` with one-line comment on Earth.
-* Commit both changes (*as a **single*** `commit`)
+* Hacer un cambio de una línea a `Marte.txt`.
+* Crear el archivo `Tierra.txt` con un comentario de una línea. 
+* Remitir los dos cambios (*como **un sólo*** `commit`)
 
 ![On the left are two documents (FILE1.txt and FILE2.txt). On the right is a zone representing the `.git` directory. Arrows show the use of `git add` to place the two documents into the staging area, followed by a `git commit` to move both files simultaneously from the staging area to the repository](img/git-committing.png)
 
 ----
 
-### The modify-add-commit lifecycle
+### El ciclo de vida modify-add-commit
 
 ![A UML-like diagram showing four potential states of a file, according to `git`: untracked, unmodified, modified, and staged. Arrows indicate the actions required to move a file from one state to another: untracked to staged, add the file; unmodified to modified, edit the file; modified to staged, stage/add the file; staged to unmodified, commit the file; unmodified to untracked, remove the file](img/lifecycle.png)
 
@@ -266,7 +294,7 @@ git commit
 
 ----
 
-### Learning objectives
+### Objetivos de aprendizaje
 
 * Understand what the `HEAD` of a repository is
 * Identify and use `git` commit numbers
@@ -289,7 +317,7 @@ git commit
 
 * We can use `git diff` to see what changed for a file at each commit
 
-**Live Presentation**
+**Presentación**
 
 ```
 git diff HEAD~1..HEAD Marte.txt
@@ -302,7 +330,7 @@ git diff HEAD~2..HEAD~1 Marte.txt
 
 * We can also compare the working copy with `HEAD`, or with any commit
 
-**Live Presentation**
+**Presentación**
 
 ```
 git diff
@@ -315,7 +343,7 @@ git diff HEAD~2
 
 * We can use the unique ID for a commit in the same way
 
-**Live Presentation**
+**Presentación**
 
 ```
 git diff d22195b9ec3c8fb4c2ce0f52f344b95ce5d0d0e3 Marte.txt
@@ -329,7 +357,7 @@ git diff d221 Marte.txt
 * How can we restore older versions/backtrack?
 * Let's say we accidentally overwrite a file…
 
-**Live Presentation**
+**Presentación**
 
 ```
 git checkout HEAD Marte.txt 
@@ -363,7 +391,7 @@ git checkout HEAD Marte.txt
 
 ----
 
-### Learning objectives
+### Objetivos de aprendizaje
 
 * Configure `git` to ignore files and directories
 * Understand why this is useful
@@ -376,7 +404,7 @@ git checkout HEAD Marte.txt
 * Temporary files
 * Intermediate analysis files
 
-**Live Presentation**
+**Presentación**
 
 ```
 mkdir results
@@ -391,7 +419,7 @@ touch a.dat results/a.out
   * It tells `git` to ignore specified files/directories
   * It should be committed in your repository
 
-**Live Presentation**
+**Presentación**
 
 ```
 code .gitignore
@@ -405,7 +433,7 @@ git add -f b.dat
 
 ----
 
-### Learning objectives
+### Objetivos de aprendizaje
 
 * What remote repositories are and why they are useful
 * To clone a remote repository
@@ -448,7 +476,7 @@ cd planets
 git init
 ``` 
 
-**Live Presentation**
+**Presentación**
 
 ----
 
@@ -466,7 +494,7 @@ git init
   * `origin` is a local nickname for the remote repo (a common choice)
   * Once set up, we *push* changes/history to the remote repo
 
-**Live Presentation**
+**Presentación**
 
 ```
 git remote add origin https://github.com/widdowquinn/planets.git
@@ -487,7 +515,7 @@ git push origin master
 
 * To synchronise the local repo with the remote repo, we *pull*
 
-**Live Presentation**
+**Presentación**
 
 ```
 git pull origin master
@@ -495,11 +523,11 @@ git pull origin master
 
 ---
 
-## GitHub collaboration
+## Colaboración en GitHub
 
 ----
 
-### Learning objectives
+### Objetivos de aprendizaje
 
 * Collaborate pushing changes to someone else's remote repository
 
@@ -511,7 +539,7 @@ git pull origin master
 * as *owner*: give GitHub repo access to your collaborator
 * as *collaborator*: clone the *owner*'s repo
 
-**Live Presentation**
+**Presentación**
 
 ```
 cd /tmp/
@@ -527,7 +555,7 @@ git remote -v
 
 * Add a file called `pluto.txt` - (content your own)
 
-**Live Presentation**
+**Presentación**
 
 ```
 cd planets
@@ -547,7 +575,7 @@ git push origin master
   * Check with `git remote -v`
 * `git pull` the changes made by your collaborator
 
-**Live Presentation**
+**Presentación**
 
 ```
 cd ~/planets/
@@ -556,62 +584,59 @@ git pull origin master
 
 ---
 
-## Resolving `git` conflicts
+## Resolviendo conflictos `git`
 
 ----
 
-### Learning objectives
+### Objetivos de aprendizaje
 
-* Understand what conflicts are, and when they occur
-* To be able to resolve conflicts resulting from a merge
-
-----
-
-### Why conflicts occur
-
-* People working in parallel
-  * different changes to same part of a file
-  * not keeping local repo in sync before making local changes
-  * not keeping remote repo in sync after making local changes
-* `git pull` before working; `git push` when done
+* Explicar qué son los conflictos y cuándo pueden ocurrir.
+* Resolver conflictos que resultan de una fusión.
 
 ----
 
-### Seriously, `git push` when done…
+### Por qué ocurren los conflictos
+
+* Gente trabajando en paralelo
+  * cambios diferentes a la misma parte de un archivo
+  * no tener sincronizado el repo local antes de hacer cambios locales
+  * no tener sincronizado el repo remoto después de hacer cambios locales
+* `git pull` antes; `git push` cuando acabes
+
+----
+
+### En serio, `git push` cuando acabes...
 
 ![A sign: In case of fire 1. git commit, 2. git push, 3. leave building](img/git_fire_notice.jpg)
 
 ----
 
-### Let's make a conflict
+### Vamos a crear un conflicto
 
-**in your pairs**
+* Como *owner*: añade una línea `Marte.txt`
+  * `commit` el cambio y `push`
 
-* As the *owner*: add a line to `Marte.txt`
-  * Commit and push the change
 
-**then**
-  
-* As the *collaborator*: add a line to `Marte.txt`
-  * Commit and push the change
+* Como *collaborator*: añade una línea a `Marte.txt`
+  * `commit` el cambio y `push`
 
-**Live Presentation**
+**Presentación**
 
 ```
-cd ~/planets
+cd ~/planetas
 code Marte.txt
 git push origin master
-cd /tmp/planets
+cd /tmp/planetas
 code Marte.txt
 git push origin master
 ```
 
 ----
 
-### The conflict message
+### El mensaje de conflicto (*conflict*)
 
 ```
-To https://github.com/<collaborator>/planets.git
+To https://github.com/<collaborator>/planetas.git
  ! [rejected]        master -> master (fetch first)
 error: failed to push some refs to 'https://github.com/<collaborator>/planets.git'
 hint: Updates were rejected because the remote contains work that you do
@@ -623,36 +648,36 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 ----
 
-### The conflicting changes
+### Los cambios conflictivos
 
 ![Three text files. At the top is the original, below this are two versions with conflicting changes. Arrows point to a question mark: how will we resolve this?](img/conflict.png)
 
 ----
 
-### Resolving a conflict
+### Resolver un conflicto
 
-* `git` detects overlapping changes
-  * `git` defers to humans for how to resolve: **communicate**!
+* `git` detecta cambios superpuestos
+  * `git` deja a los humanos resolver: **comunicaos**!
   
-* To resolve:
-  * *pull* remote changes
-  * *merge* changes into our working copy
-  * *push* the merged changes
+* Para resolver:
+  * *pull* cambios remotos
+  * *merge* cambios en la *working copy*
+  * *push* los cambios *merged*
   
-**Live Presentation**
+**Presentación**
 
 ---
 
-## Wrapping up
+## Resumiendo
 
-* GitHub/Control de versiones can be an open electronic lab book as part of Open Science workflows
-  * Collect data - store in OA repository (Zenodo/FigShare)
-  * Use GitHub to store work in progress: analysis lab book
-  * Post preprint to (Bio)arXiv
-* Even if you don't work openly, it's more reproducible (and auditable)
+* GitHub y Control de versiones puede ser un cuaderno de laboratorio electrónico, parte del paradigma de *Open Science* (OS)
+  * Almacena datos - guarda en repositorio OA (Zenodo/FigShare)
+  * Usa GitHub para almacenar trabajo en curso: análisis de laboratorio
+  * Envía el preprint a (Bio)arXiv
+* Incluso si no te gusta el *OS*, es más reproducible (y auditable)
 
 ----
 
-### You're ready to leave this behind…
+### Ya estás preparado para dejar esto atrás…
 
 ![PhD comic: A directory listing with filenames like data_2010.05.28_test.dat, data_2010.05.28_re-test.dat, data_2010.05.28_re-re-test.dat, data_2010.05.28_calibrate.dat, data_2010.05.29_aaarrrgh.dat, data_2010.05.29_WTF.dat, data_2010.05.29_USETHISONE.dat](img/phd052810s.png)
