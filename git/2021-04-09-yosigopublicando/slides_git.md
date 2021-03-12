@@ -3,8 +3,9 @@ marp: true
 theme: uncover
 paginate: true
 ---
-
-# 2021-04-08 GIT en #yosigopublicando
+### Git y Github para investigación
+#### F. J. Martinez-Murcia
+![Logo The Carpentries. height:5cm](img/logos.png)
 
 ----
 
@@ -690,6 +691,15 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 * Incluso si no te gusta el *OS*, es más reproducible (y auditable)
 
 ----
+
+## Cheatsheet 
+* `git add/rm <archivo>`
+* `git commit -m "mensaje"`
+* `git checkout <branch>`
+* `git clone <repo>`
+* `git pull/push`
+
+---
 
 ### Ya estás preparado para dejar esto atrás…
 
