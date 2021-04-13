@@ -20,20 +20,16 @@ paginate: true
 * Hombre Lobo y Dracula viven en diferentes continentes.
 * Trabajan en el mismo plan al mismo tiempo.
 * Cómo lo gestionamos?
-  * Hacemos turnos para cada archivo?
-  * Mandamos copias por email?
-* La solución? **Control de versiones** 
+  * Hacemos turnos para cada archivo y mandamos copias por email?
+  * Usamos google docs?
 
 ----
 
-### Ventajas del Control de versiones
-
-* Nada se pierde una vez que se incluye bajo control de versiones (a menos que lo intentes fuertemente…)
-* Sabemos quien y cuando se hicieron cambios
-* Se pueden revertir a versiones anteriores.
-* Podemos identificar y corregir conflictos
-
-El cuaderno de laboratorio virtual!
+### ¿Y si tuvieran que diseñar la herramienta?
+* Que nada se pierda: poder navegar hacia atrás y adelante en el tiempo. 
+* Identificar quién y cuando se han hecho cambios. 
+* Identificar conflictos
+* Tener todo centralizado y disponible
 
 ---
 
@@ -44,12 +40,6 @@ El cuaderno de laboratorio virtual!
 ---
 
 ## Control de versiones con `git`
-
-----
-
-### Que nos queda…?
-
-![XKCD comic - A: Esto es git. Hace un seguimiento del trabajo colaborativo en los proyectos a través de un hermoso modo de árbol de teoría de grafos distribuidos; B: Genial. ¿Cómo lo usamos?; A: Ni idea. Sólo tienes que memorizar estos comandos del shell y escribirlos para sincronizar. Si obtienes errores, guarda tu trabajo en otro lugar, borra el proyecto y descarga una copia de gresh.](img/git.png)
 
 ----
 
@@ -131,8 +121,7 @@ El cuaderno de laboratorio virtual!
 ```
 git config --global user.name "Vlad Dracul"
 git config --global user.email "vlad@tran.sylvan.ia"
-git config --global color.ui "auto"
-git config --global core.editor "code --wait"
+git config --global core.editor "gedit --wait"
 ```
 
 ---
@@ -153,10 +142,8 @@ git config --global core.editor "code --wait"
 
 ### Creando un repositorio `git`
 
-* Un proyecto de ficción sobre planetas
-  * (Hombre Lobo y Dracula…)
-
-* Sirve para **todo**: Código, archivos. 
+* Misión a marte de Hombre Lobo y Drácula
+* Sirve para **todo**: Código, documentos de texto. 
 * Recomiendo Markdown y `pandoc`
 
 ----
@@ -164,6 +151,8 @@ git config --global core.editor "code --wait"
 **Presentación**
 
 ```
+mkdir planetas
+cd planetas
 git init
 git status
 ```
@@ -178,23 +167,25 @@ git status
 
 * Practicar el ciclo `modify-add-commit`
 * Entender dónde se guarda la información dentro del flujo de trabajo de `git`
+* Distinguir entre mensajes descriptivos y no-descriptivos de un commit.
 
 ----
 
 ### Mi primer archivo sin seguimiento
 
 * Vamos a crear un archivo, pero no haremos nada. 
-  * "Es Marte adecuado como base espacial?" 
+  * Drácula: "Frío y seco, pero todo es de mi color favorito" 
 
 **Presentación**
 
 ```
-code Marte.txt
+gedit Marte.txt
+git status
 ```
 
 ----
 
-### Mi primer `git commit`
+### Qué es `git commit`?
 <!-- Scoped style -->
 <style scoped>
 blockquote {
@@ -208,27 +199,31 @@ blockquote {
 >   to consign for preservation:
 >   > to commit ideas to writing; to commit a poem to memory.
 
-**remitir**
-
 ----
 
 ### Mi primer `git commit`
 
-* Decimos a `git` que *siga* un archivo (vigile para cambios): `git add`
 * También hacemos `git commit` al archivo (guarda una copia del archivo en el *repositorio*, en su estado actual)
 
 **Presentación**
 ```
 git add Marte.txt
-git commit -m "start notes on Marte as a base"
+git commit -m "añadir anotaciones de Marte como base"
 git log
 ```
+
+---- 
+
+### Por qué git add? 
+* No siempre queremos hacer un commit de todas las modificaciones
+* Hacer commit de nuestros cambios en etapas y capturarlos en porciones lógicas en lugar de solo lotes grandes.
+
+![Cantidad de archivos](img/archivos_tesis.png)
 
 ----
 
 ### El área de preparación (*staging area*)
 
-* No siempre queremos hacer un "commit" de los cambios
 * El *staging area* contiene los cambios que no queremos hacer "commit".
   * (otros archivos que también se han cambiado, pero que no queremos remitir)
   
@@ -246,10 +241,9 @@ git log
 **Presentación**
 
 ```
-code Marte.txt
+gedit Marte.txt
 git diff
 git add Marte.txt
-git diff
 git commit
 ```
 
@@ -275,12 +269,6 @@ git commit
 * Remitir los dos cambios (*como **un sólo*** `commit`)
 
 ![On the left are two documents (FILE1.txt and FILE2.txt). On the right is a zone representing the `.git` directory. Arrows show the use of `git add` to place the two documents into the staging area, followed by a `git commit` to move both files simultaneously from the staging area to the repository](img/git-committing.png)
-
-----
-
-### El ciclo de vida modify-add-commit
-
-![A UML-like diagram showing four potential states of a file, according to `git`: untracked, unmodified, modified, and staged. Arrows indicate the actions required to move a file from one state to another: untracked to staged, add the file; unmodified to modified, edit the file; modified to staged, stage/add the file; staged to unmodified, commit the file; unmodified to untracked, remove the file](img/lifecycle.png)
 
 ----
 
@@ -358,13 +346,6 @@ git diff d22195b9ec3c8fb4c2ce0f52f344b95ce5d0d0e3 Marte.txt
 git diff d221 Marte.txt
 ```
 
-----
-
-### Historial con IDs de commit
-
-* En github: 
-
-![Tres documentos. A la izquierda está el original. En el medio está ese documento con una línea cambiada. A la derecha está el documento del medio con un párrafo extra añadido. Las flechas indican que los documentos están relacionados en el orden de la historia.](img/historial_commit_github.png)
 
 ----
 
@@ -391,6 +372,12 @@ git checkout HEAD Marte.txt
 
 ----
 
+### `git checkout`
+
+![A la izquierda hay una zona que representa el directorio `.git`, con tres confirmaciones en un repositorio. Un commit (HEAD~1, f22b25e) contiene los cambios que queremos recuperar. A la derecha hay dos archivos que están recuperados. Una flecha indica dos comandos para la recuperación: `git checkout HEAD~1` y `git checkout f22b25e`.](img/git_staging.png)
+
+----
+
 ### Pregunta
 
 - Qué comando(s) harán que Manuela recupere la última versión remitida de su script `exprimir_datos.py` (pero ningún otro archivo)?
@@ -399,7 +386,7 @@ git checkout HEAD Marte.txt
 1. `$ git checkout HEAD`
 2. `$ git checkout HEAD exprimir_datos.py`
 3. `$ git checkout HEAD~1 exprimir_datos.py`
-4. `$ git checkout <unique ID of last commit> exprimir_datos.py`
+4. `$ git checkout <ID único del último commit> exprimir_datos.py`
 
 ---
 
@@ -438,7 +425,7 @@ touch a.dat results/a.out
 **Presentación**
 
 ```
-code .gitignore
+gedit .gitignore
 git status --ignored
 git add -f b.dat
 ```
@@ -535,6 +522,13 @@ git push origin master
 ```
 git pull origin master
 ```
+----
+
+### Historial con IDs de commit
+
+* En github: 
+
+![Tres documentos. A la izquierda está el original. En el medio está ese documento con una línea cambiada. A la derecha está el documento del medio con un párrafo extra añadido. Las flechas indican que los documentos están relacionados en el orden de la historia.](img/historial_commit_github.png)
 
 ---
 
@@ -574,7 +568,7 @@ git clone https://github.com/<propietario>/planetas.git
 
 ```
 cd planetas
-code pluton.txt
+gedit pluton.txt
 git add pluton.txt
 git commit -m "Notas sobre Pluton"
 git push origin master
@@ -639,10 +633,10 @@ git pull origin master
 
 ```
 cd ~/planetas
-code Marte.txt
+gedit Marte.txt
 git push origin master
 cd /tmp/planetas
-code Marte.txt
+gedit Marte.txt
 git push origin master
 ```
 
