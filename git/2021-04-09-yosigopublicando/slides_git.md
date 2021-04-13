@@ -3,13 +3,14 @@ marp: true
 theme: uncover
 paginate: true
 ---
-### Git y Github para investigación
+## Git y Github para investigación
 #### F. J. Martinez-Murcia
 ![Logo The Carpentries. height:5cm](img/logos.png)
 
 ----
 
 ## Os voy a contar una historia...
+![bg cover](img/mars_.jpg)
 
 ----
 
