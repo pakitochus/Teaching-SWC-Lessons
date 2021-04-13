@@ -6,4 +6,4 @@
 
 # Ignore local Python virtualenv
 venv-*
-git/2021-04-09-yosigopublicando/slides_git.pdf
+git/*/slides_git.pdf
