@@ -513,9 +513,9 @@ git add -f b.dat
 
 ### Crear un repositorio remoto
 
-* Esencialemnte, en los servidores de GitHub:
-
 **Presentación**
+
+* Esencialmente, en los servidores de GitHub:
 ```
 mkdir planetas
 cd planetas
@@ -529,7 +529,7 @@ git init
 
 * No hay nada en el repositorio remoto!
 
-![Dos repositorios. En la parte superior, el repositorio local `planetas` (perteneciente a Vlad), que contiene los archivos del área de preparación y del repositorio. En la parte inferior, un epositorio vacío, que representa el repositorio "limpio" recién creado en `GitHub`.](img/git-freshly-made-github-repo.png)
+![Dos repositorios. En la parte superior, el repositorio local `planetas` (perteneciente a Vlad), que contiene los archivos del área de preparación y del repositorio. En la parte inferior, un epositorio vacío, que representa el repositorio "limpio" recién creado en `GitHub`.](img/github_vacio.png)
 
 ----
 
