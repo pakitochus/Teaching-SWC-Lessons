@@ -552,7 +552,7 @@ git push origin master
 
 * Sólo hemos hecho *push* del repositorio, no de la *staging area*
 
-![Dos repositorios. En la parte superior, el repositorio local `planets` (perteneciente a Vlad), que contiene los archivos del área de preparación y del repositorio. En la parte inferior, el repositorio remoto `GitHub`, que contiene el mismo repositorio que el repo local - pero *no* el área de preparación](img/github-repo-after-first-push.png)
+![Dos repositorios. En la parte superior, el repositorio local `planets` (perteneciente a Vlad), que contiene los archivos del área de preparación y del repositorio. En la parte inferior, el repositorio remoto `GitHub`, que contiene el mismo repositorio que el repo local - pero *no* el área de preparación](img/github_push.png)
 
 ----
 
@@ -565,6 +565,12 @@ git push origin master
 ```
 git pull origin master
 ```
+----
+
+### Mi primer `pull`
+
+![Dos repositorios. En la parte superior, el repositorio local `planets` (perteneciente a Vlad), que contiene los archivos del área de preparación y del repositorio. En la parte inferior, el repositorio remoto `GitHub`, que contiene el mismo repositorio que el repo local - pero *no* el área de preparación](img/github_pull.png)
+
 ----
 
 ### Historial con IDs de commit
