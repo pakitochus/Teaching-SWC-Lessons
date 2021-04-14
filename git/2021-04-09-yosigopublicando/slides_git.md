@@ -407,18 +407,17 @@ git checkout HEAD Marte.txt
 ----
 
 ### `git checkout`
+![A la izquierda hay una zona que representa el directorio `.git`, con tres confirmaciones en un repositorio. Un commit (HEAD~1, f22b25e) contiene los cambios que queremos recuperar. A la derecha hay dos archivos que están recuperados. Una flecha indica dos comandos para la recuperación: `git checkout HEAD~1` y `git checkout f22b25e`.](img/git_checkout_nothead.png)
+
+----
+
+### `git checkout`
 
 * `git checkout` "comprueba" archivos del repo
   * Puede usar cualquier commit ID
   * Comprueba el commit *antes* de la edición que quieres reemplazar!
 
 ![A la izquierda hay una zona que representa el directorio `.git`, con tres confirmaciones en un repositorio. Un commit (HEAD~1, f22b25e) contiene los cambios que queremos recuperar. A la derecha hay dos archivos que están recuperados. Una flecha indica dos comandos para la recuperación: `git checkout HEAD~1` y `git checkout f22b25e`.](img/git-checkout.png)
-
-----
-
-### `git checkout`
-
-![A la izquierda hay una zona que representa el directorio `.git`, con tres confirmaciones en un repositorio. Un commit (HEAD~1, f22b25e) contiene los cambios que queremos recuperar. A la derecha hay dos archivos que están recuperados. Una flecha indica dos comandos para la recuperación: `git checkout HEAD~1` y `git checkout f22b25e`.](img/git_staging.png)
 
 ----
 
