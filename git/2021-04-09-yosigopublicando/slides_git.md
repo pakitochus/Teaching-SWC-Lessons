@@ -69,7 +69,7 @@ _color: white
 
 * Control de versiones es como una 'grabación' de la historia
 
-![Tres documentos. El primero tiene dos párrafos. El segundo tiene un párrafo modificado. El tercero tiene un párrafo adicional](img/play-changes.png)
+![Tres documentos. El primero tiene dos párrafos. El segundo tiene un párrafo modificado. El tercero tiene un párrafo adicional](img/play-changes.svg)
 
 * Rebobina y reproduce los cambios
 
@@ -79,10 +79,10 @@ _color: white
 
 * Dos personas trabajan en un documento
   * Cada uno hace sus cambios: los documentos divergen
+  * Los cambios se separan del documento
   
-![Tres documentos. A la izquierda está el original, y a la derecha hay dos versiones de éste con cambios diferentes y contradictorios](img/versions.png)
+![Tres documentos. A la izquierda está el original, y a la derecha hay dos versiones de éste con cambios diferentes y contradictorios](img/versions.svg)
 
-* Los cambios se separan del documento
 
 ----
 
@@ -91,7 +91,7 @@ _color: white
 * Varios cambios se pueden mezclar (*merge*) en el mismo documento base
   * 'Merging'
 
-![Tres documentos. A la izquierda están los dos documentos modificados de la diapositiva anterior. A la derecha hay uno que incorpora esos dos cambios](img/merge.png)
+![Tres documentos. A la izquierda están los dos documentos modificados de la diapositiva anterior. A la derecha hay uno que incorpora esos dos cambios](img/merge.svg)
 
 ----
 
@@ -297,7 +297,7 @@ git commit
 * Crear el archivo `Tierra.txt` con un comentario de una línea. 
 * Remitir los dos cambios (*como **un sólo*** `commit`)
 
-![On the left are two documents (FILE1.txt and FILE2.txt). On the right is a zone representing the `.git` directory. Arrows show the use of `git add` to place the two documents into the staging area, followed by a `git commit` to move both files simultaneously from the staging area to the repository](img/git-committing.png)
+![On the left are two documents (FILE1.txt and FILE2.txt). On the right is a zone representing the `.git` directory. Arrows show the use of `git add` to place the two documents into the staging area, followed by a `git commit` to move both files simultaneously from the staging area to the repository](img/git-committing.svg)
 
 ----
 
@@ -334,7 +334,7 @@ git commit
 * El siguiente más reciente: `HEAD~1`
 * El siguiente al siguiente más reciente: `HEAD~2`
 
-![Tres documentos. A la izquierda está el original. En el medio está ese documento con una línea cambiada. A la derecha está el documento del medio con un párrafo extra añadido. Las flechas indican que los documentos están relacionados en el orden de la historia.](img/play-changes.png)
+![Tres documentos. A la izquierda está el original. En el medio está ese documento con una línea cambiada. A la derecha está el documento del medio con un párrafo extra añadido. Las flechas indican que los documentos están relacionados en el orden de la historia.](img/play-changes.svg)
 
 ----
 
@@ -417,7 +417,7 @@ git checkout HEAD Marte.txt
   * Puede usar cualquier commit ID
   * Comprueba el commit *antes* de la edición que quieres reemplazar!
 
-![A la izquierda hay una zona que representa el directorio `.git`, con tres confirmaciones en un repositorio. Un commit (HEAD~1, f22b25e) contiene los cambios que queremos recuperar. A la derecha hay dos archivos que están recuperados. Una flecha indica dos comandos para la recuperación: `git checkout HEAD~1` y `git checkout f22b25e`.](img/git-checkout.png)
+![A la izquierda hay una zona que representa el directorio `.git`, con tres confirmaciones en un repositorio. Un commit (HEAD~1, f22b25e) contiene los cambios que queremos recuperar. A la derecha hay dos archivos que están recuperados. Una flecha indica dos comandos para la recuperación: `git checkout HEAD~1` y `git checkout f22b25e`.](img/git-checkout.svg)
 
 ----
 
@@ -593,7 +593,7 @@ git pull origin master
 
 ### Comenzar una colaboración
 
-* Colaboración en SWC... Aquí masivo. 
+* Colaboración! Necesito 3 o 4 voluntarios! 
 * Roles: 'owner' (propietario), 'collaborator' (colaborador). 
 * Como *propietario*: dar acceso GitHub a tus colaboradores
 * Como *collaborador*: clonar el repo del *propietario*
@@ -609,28 +609,32 @@ git clone https://github.com/<propietario>/planetas.git
 
 ### Hacer cambios colaborativos
 
-* **como *colaborador***:
+* **El *colaborador***:
 
-* Añade un archivo llamado `pluton.txt`: 
+* Añade un archivo con nombre de planeta `*.txt`: 
 
 **Presentación**
 
 ```
 cd planetas
-gedit pluton.txt
-git add pluton.txt
-git commit -m "Notas sobre Pluton"
+gedit <planeta>.txt
+git add <planeta>.txt
+git commit -m "Notas sobre <inserte planeta aqui>"
 git push origin master
 ```
+----
+
+### `Push` de cambios de colaboradores
+
+![Dos repositorios. En la parte superior, el repositorio local `planets` (perteneciente a Vlad), que contiene los archivos del área de preparación y del repositorio. En la parte inferior, el repositorio remoto `GitHub`, que contiene el mismo repositorio que el repo local - pero *no* el área de preparación](img/github_otros_push.png)
 
 ----
 
 ### `Pull` de cambios de un colaborador
 
-* **Como *propietario***
+* **El *propietario***
 
-* Cambia a tu propio repositorio
-  * Comprueba con `git remote -v`
+* Comprueba con `git remote -v`
 * Haz `git pull` para traer los cambios de tu colaborador
 
 **Presentación**
@@ -692,7 +696,7 @@ git push origin master
 
 ### Los cambios conflictivos
 
-![Three text files. At the top is the original, below this are two versions with conflicting changes. Arrows point to a question mark: how will we resolve this?](img/conflict.png)
+![Three text files. At the top is the original, below this are two versions with conflicting changes. Arrows point to a question mark: how will we resolve this?](img/conflict.svg)
 
 ----
 
