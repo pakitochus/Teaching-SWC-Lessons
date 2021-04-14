@@ -52,6 +52,12 @@ _color: white
 
 ----
 
+### O esto?
+
+![Twitter de javivalls con la pérdida de información por no usar git](img/twitter_javivalls.png)
+
+----
+
 ### Objetivos de aprendizaje
 
 * Comprender los beneficios de usar un sistema automático de control de versiones.
@@ -157,6 +163,10 @@ cd planetas
 git init
 git status
 ```
+
+----
+### Creando un repositorio `git`
+![Una carpeta y un espacio](img/git_init_propio.png)
 
 ---
 

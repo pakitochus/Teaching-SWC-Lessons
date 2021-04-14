@@ -10,9 +10,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="190.88834mm"
+   height="86.920486mm"
+   viewBox="0 0 190.88834 86.920486"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
@@ -229,8 +229,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="469.36778"
-     inkscape:cy="759.58577"
+     inkscape:cx="303.89315"
+     inkscape:cy="85.678491"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -238,7 +238,11 @@
      inkscape:window-height="1016"
      inkscape:window-x="72"
      inkscape:window-y="27"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -254,29 +258,31 @@
   <g
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-6.9200647,-3.776386)">
     <rect
        ry="14.967093"
        rx="14.967093"
-       y="14.926319"
-       x="80.24205"
+       y="15.193588"
+       x="66.076767"
        height="71.4375"
        width="117.34483"
        id="rect5117"
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#73b5cb;stroke-width:1.89999998;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:5.69999993, 1.89999998;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke" />
     <text
        id="text4633"
-       y="25.140625"
-       x="87.123505"
+       y="25.407894"
+       x="72.958221"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
          style="font-size:5.64444447px;stroke-width:0.26458332"
-         y="25.140625"
-         x="87.123505"
+         y="25.407894"
+         x="72.958221"
          id="tspan4631"
          sodipodi:role="line">.git</tspan></text>
     <g
-       id="g4656">
+       id="g4656"
+       transform="translate(-14.165285,0.26726953)">
       <rect
          y="31.660713"
          x="30.805059"
@@ -329,7 +335,7 @@
       </g>
     </g>
     <g
-       transform="matrix(0.27326313,0,0,0.27326313,-59.062475,-28.860739)"
+       transform="matrix(0.27326313,0,0,0.27326313,-73.22776,-28.593469)"
        id="g17287-6">
       <path
          style="fill:url(#linearGradient4547);fill-opacity:1;stroke:#fdfdfe;stroke-width:2.45359206;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
@@ -364,7 +370,7 @@
     </g>
     <g
        id="g4599"
-       transform="translate(6.5297838,-27.960742)">
+       transform="translate(-7.6355011,-27.693472)">
       <path
          d="m 80.302281,75.2028 c 0,-3.797245 7.70602,-6.859538 17.215577,-6.859538 9.509562,0 17.215572,3.062293 17.215572,6.859538 m -34.431149,0 v 8.543804 c 0,0.918689 0.464548,1.806753 1.284337,2.602949 2.568673,2.511083 8.74442,4.25659 15.93124,4.25659 7.214142,0 13.362572,-1.776131 15.931242,-4.25659 0.81979,-0.796196 1.28433,-1.68426 1.28433,-2.602949 V 75.2028"
          class="st6"
@@ -381,72 +387,72 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="89.528931"
-       y="69.641006"
+       x="75.363647"
+       y="69.908279"
        id="text4671"><tspan
          sodipodi:role="line"
          id="tspan4669"
-         x="89.528931"
-         y="69.641006"
+         x="75.363647"
+         y="69.908279"
          style="font-size:4.58611107px;stroke-width:0.26458332">staging area</tspan></text>
     <text
        id="text4675"
-       y="80.732697"
-       x="146.85825"
+       y="80.999969"
+       x="132.69296"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
          style="font-size:4.58611107px;stroke-width:0.26458332"
-         y="80.732697"
-         x="146.85825"
+         y="80.999969"
+         x="132.69296"
          id="tspan4673"
          sodipodi:role="line">branch master</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.84036541px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.19600913"
-       x="158.66685"
-       y="44.523617"
+       x="144.50157"
+       y="44.790886"
        id="text4679"><tspan
          sodipodi:role="line"
          id="tspan4677"
-         x="158.66685"
-         y="44.523617"
+         x="144.50157"
+         y="44.790886"
          style="font-size:3.39749193px;fill:#ffffff;stroke-width:0.19600913">1ead2f</tspan></text>
     <text
        id="text4683"
-       y="53.276695"
-       x="158.66685"
+       y="53.543964"
+       x="144.50157"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.84036541px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.19600913"
        xml:space="preserve"><tspan
          style="font-size:3.39749193px;fill:#ffffff;stroke-width:0.19600913"
-         y="53.276695"
-         x="158.66685"
+         y="53.543964"
+         x="144.50157"
          id="tspan4681"
          sodipodi:role="line">8abd0</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.84036541px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.19600913"
-       x="158.66685"
-       y="61.962955"
+       x="144.50157"
+       y="62.230225"
        id="text4687"><tspan
          sodipodi:role="line"
          id="tspan4685"
-         x="158.66685"
-         y="61.962955"
+         x="144.50157"
+         y="62.230225"
          style="font-size:3.39749193px;fill:#ffffff;stroke-width:0.19600913">bbdb1</tspan></text>
     <text
        id="text4691"
-       y="70.649216"
-       x="158.06551"
+       y="70.916489"
+       x="143.90022"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.84036541px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.19600913"
        xml:space="preserve"><tspan
          style="font-size:3.39749193px;fill:#ffffff;stroke-width:0.19600913"
-         y="70.649216"
-         x="158.06551"
+         y="70.916489"
+         x="143.90022"
          id="tspan4689"
          sodipodi:role="line">abf93d</tspan></text>
     <g
        id="g4752"
-       transform="translate(35.391914,-1.3229167)">
+       transform="translate(21.226629,-1.0556472)">
       <path
          style="fill:#68aa43;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.21341857px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 101.81773,50.803242 0.0102,-3.834366 7.31023,7.269208 -7.2224,6.337682 0.006,-3.872188 c -0.169,-0.189209 -14.316593,-2.358921 -14.512303,-2.371894 5.455767,-2.027116 9.008205,-1.704403 14.408433,-3.528442 z"
@@ -461,7 +467,7 @@
          style="fill:url(#linearGradient5111);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.21341857px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     </g>
     <g
-       transform="translate(-25.812808,-1.3229167)"
+       transform="translate(-39.978093,-1.0556472)"
        id="g4758">
       <path
          sodipodi:nodetypes="cccccccc"
@@ -478,61 +484,61 @@
     </g>
     <text
        id="text4764"
-       y="43.56292"
-       x="61.733883"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.53044844px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.18826121"
-       xml:space="preserve"><tspan
-         style="font-size:3.26319432px;stroke-width:0.18826121;-inkscape-font-specification:'Comfortaa Bold';font-family:Comfortaa;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
-         y="43.56292"
-         x="61.733883"
-         id="tspan4762"
-         sodipodi:role="line">git add file.txt</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.53044844px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.18826121"
-       x="123.06052"
-       y="43.56292"
-       id="text4768"><tspan
-         sodipodi:role="line"
-         id="tspan4766"
-         x="123.06052"
-         y="43.56292"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.26319432px;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Bold';stroke-width:0.18826121">git commit -m</tspan></text>
-    <text
-       id="text4772"
-       y="39.420242"
-       x="182.52798"
+       y="44.019176"
+       x="46.529163"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.53044844px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.18826121"
        xml:space="preserve"><tspan
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.26319432px;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Bold';stroke-width:0.18826121"
-         y="39.420242"
-         x="182.52798"
+         y="44.019176"
+         x="46.529163"
+         id="tspan4762"
+         sodipodi:role="line">git add file1.txt</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.53044844px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.18826121"
+       x="108.89523"
+       y="43.830189"
+       id="text4768"><tspan
+         sodipodi:role="line"
+         id="tspan4766"
+         x="108.89523"
+         y="43.830189"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.26319432px;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Bold';stroke-width:0.18826121">git commit -m</tspan></text>
+    <text
+       id="text4772"
+       y="39.687511"
+       x="168.3627"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.53044844px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.18826121"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.26319432px;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Bold';stroke-width:0.18826121"
+         y="39.687511"
+         x="168.3627"
          id="tspan4770"
          sodipodi:role="line">HEAD</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.53044844px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.18826121"
-       x="182.52798"
-       y="48.379143"
+       x="168.3627"
+       y="48.646412"
        id="text4776"><tspan
          sodipodi:role="line"
          id="tspan4774"
-         x="182.52798"
-         y="48.379143"
+         x="168.3627"
+         y="48.646412"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.26319432px;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Bold';stroke-width:0.18826121">HEAD~1</tspan></text>
     <text
        id="text4780"
-       y="56.798134"
-       x="182.52798"
+       y="57.065403"
+       x="168.3627"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.53044844px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.18826121"
        xml:space="preserve"><tspan
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.26319432px;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Bold';stroke-width:0.18826121"
-         y="56.798134"
-         x="182.52798"
+         y="57.065403"
+         x="168.3627"
          id="tspan4778"
          sodipodi:role="line">HEAD~2</tspan></text>
     <g
-       transform="translate(60.688803,9.8498535)"
+       transform="translate(46.523518,10.117123)"
        id="g838-1">
       <path
          style="fill:none;stroke:#ff0000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -542,7 +548,7 @@
     </g>
     <g
        id="g4792-8"
-       transform="translate(60.688803,13.253945)">
+       transform="translate(46.523518,13.521215)">
       <path
          inkscape:connector-curvature="0"
          id="path4782-1"
@@ -559,24 +565,24 @@
        id="rect4890"
        width="117.34483"
        height="71.4375"
-       x="80.24205"
-       y="94.112328"
+       x="66.076767"
+       y="94.379601"
        rx="14.967093"
        ry="14.967093" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="87.123505"
-       y="104.32664"
+       x="72.958221"
+       y="104.59391"
        id="text4894"><tspan
          sodipodi:role="line"
          id="tspan4892"
-         x="87.123505"
-         y="104.32664"
+         x="72.958221"
+         y="104.59391"
          style="font-size:5.64444447px;stroke-width:0.26458332">git remoto</tspan></text>
     <g
        id="g4906"
-       transform="matrix(0.27326313,0,0,0.27326313,-59.062475,50.325273)">
+       transform="matrix(0.27326313,0,0,0.27326313,-73.22776,50.592543)">
       <path
          d="m 752.73922,319.38431 c 0,-13.89593 28.2,-25.10233 63,-25.10233 34.8,0 63,11.2064 63,25.10233 m -126,0 v 31.26584 c 0,3.36192 1.7,6.61178 4.7,9.52544 9.4,9.18924 32,15.57689 58.3,15.57689 26.4,0 48.9,-6.49971 58.3,-15.57689 3,-2.91366 4.7,-6.16352 4.7,-9.52544 v -31.26584"
          class="st6"
@@ -611,60 +617,60 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="146.85825"
-       y="159.9187"
+       x="132.69296"
+       y="160.18597"
        id="text4920"><tspan
          sodipodi:role="line"
          id="tspan4918"
-         x="146.85825"
-         y="159.9187"
+         x="132.69296"
+         y="160.18597"
          style="font-size:4.58611107px;stroke-width:0.26458332">branch master</tspan></text>
     <text
        id="text4924"
-       y="123.70963"
-       x="158.66685"
+       y="123.97691"
+       x="144.50157"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.84036541px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.19600913"
        xml:space="preserve"><tspan
          style="font-size:3.39749193px;fill:#ffffff;stroke-width:0.19600913"
-         y="123.70963"
-         x="158.66685"
+         y="123.97691"
+         x="144.50157"
          id="tspan4922"
          sodipodi:role="line">1ead2f</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.84036541px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.19600913"
-       x="158.66685"
-       y="132.46271"
+       x="144.50157"
+       y="132.72998"
        id="text4928"><tspan
          sodipodi:role="line"
          id="tspan4926"
-         x="158.66685"
-         y="132.46271"
+         x="144.50157"
+         y="132.72998"
          style="font-size:3.39749193px;fill:#ffffff;stroke-width:0.19600913">8abd0</tspan></text>
     <text
        id="text4932"
-       y="141.14897"
-       x="158.66685"
+       y="141.41624"
+       x="144.50157"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.84036541px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.19600913"
        xml:space="preserve"><tspan
          style="font-size:3.39749193px;fill:#ffffff;stroke-width:0.19600913"
-         y="141.14897"
-         x="158.66685"
+         y="141.41624"
+         x="144.50157"
          id="tspan4930"
          sodipodi:role="line">bbdb1</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.84036541px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.19600913"
-       x="158.06551"
-       y="149.83522"
+       x="143.90022"
+       y="150.10249"
        id="text4936"><tspan
          sodipodi:role="line"
          id="tspan4934"
-         x="158.06551"
-         y="149.83522"
+         x="143.90022"
+         y="150.10249"
          style="font-size:3.39749193px;fill:#ffffff;stroke-width:0.19600913">abf93d</tspan></text>
     <g
-       transform="rotate(90,115.59179,110.58881)"
+       transform="rotate(90,108.37551,103.6398)"
        id="g4942">
       <path
          sodipodi:nodetypes="cccccccc"
@@ -682,39 +688,39 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.53044844px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.18826121"
-       x="182.52798"
-       y="118.60625"
+       x="168.3627"
+       y="118.87352"
        id="text4950"><tspan
          sodipodi:role="line"
          id="tspan4948"
-         x="182.52798"
-         y="118.60625"
+         x="168.3627"
+         y="118.87352"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.26319432px;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Bold';stroke-width:0.18826121">HEAD</tspan></text>
     <text
        id="text4954"
-       y="127.56516"
-       x="182.52798"
+       y="127.83244"
+       x="168.3627"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.53044844px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.18826121"
        xml:space="preserve"><tspan
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.26319432px;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Bold';stroke-width:0.18826121"
-         y="127.56516"
-         x="182.52798"
+         y="127.83244"
+         x="168.3627"
          id="tspan4952"
          sodipodi:role="line">HEAD~1</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.53044844px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.18826121"
-       x="182.52798"
-       y="135.98415"
+       x="168.3627"
+       y="136.25142"
        id="text4958"><tspan
          sodipodi:role="line"
          id="tspan4956"
-         x="182.52798"
-         y="135.98415"
+         x="168.3627"
+         y="136.25142"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.26319432px;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Bold';stroke-width:0.18826121">HEAD~2</tspan></text>
     <g
        id="g4992"
-       transform="rotate(-90,148.09774,44.580826)">
+       transform="rotate(-90,141.14873,51.797103)">
       <path
          style="fill:#d40000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.21341857px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 101.81773,50.803242 0.0102,-3.834366 7.31023,7.269208 -7.2224,6.337682 0.006,-3.872188 c -0.169,-0.189209 -14.316593,-2.358921 -14.512303,-2.371894 5.455767,-2.027116 9.008205,-1.704403 14.408433,-3.528442 z"
@@ -730,25 +736,50 @@
     </g>
     <text
        id="text4998"
-       y="90.998932"
-       x="177.86707"
+       y="91.266205"
+       x="163.70178"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.53044844px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.18826121"
        xml:space="preserve"><tspan
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.26319432px;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Bold';stroke-width:0.18826121"
-         y="90.998932"
-         x="177.86707"
+         y="91.266205"
+         x="163.70178"
          sodipodi:role="line"
          id="tspan5000">git push origin master</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.53044844px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.18826121"
-       x="111.72123"
-       y="90.998932"
+       x="97.555946"
+       y="91.266205"
        id="text5006"><tspan
          id="tspan5004"
          sodipodi:role="line"
-         x="111.72123"
-         y="90.998932"
+         x="97.555946"
+         y="91.266205"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.26319432px;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Bold';stroke-width:0.18826121">git pull origin master</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="20.230543"
+       y="28.904175"
+       id="text2121"><tspan
+         sodipodi:role="line"
+         id="tspan2119"
+         x="20.230543"
+         y="28.904175"
+         style="font-size:5.64444447px;stroke-width:0.26458332">file1.txt</tspan></text>
+    <g
+       id="g2733"
+       transform="matrix(0.32304854,0,0,0.32304854,22.152077,5.9700837)">
+      <path
+         id="path2719"
+         d="M 40,12 H 22 L 18,8 H 8 C 5.8,8 4,9.8 4,12 v 8 h 40 v -4 c 0,-2.2 -1.8,-4 -4,-4 z"
+         inkscape:connector-curvature="0"
+         style="fill:#ffa000" />
+      <path
+         id="path2721"
+         d="M 40,12 H 8 c -2.2,0 -4,1.8 -4,4 v 20 c 0,2.2 1.8,4 4,4 h 32 c 2.2,0 4,-1.8 4,-4 V 16 c 0,-2.2 -1.8,-4 -4,-4 z"
+         inkscape:connector-curvature="0"
+         style="fill:#ffca28" />
+    </g>
   </g>
 </svg>
