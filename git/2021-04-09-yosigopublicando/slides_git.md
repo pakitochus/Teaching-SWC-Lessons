@@ -32,7 +32,10 @@ paginate: true
 * Tener todo centralizado y disponible
 
 ---
-
+<!--
+_backgroundColor: blue
+_color: white
+-->
 ### Disclaimer
 * La terminología de git está en inglés. En algunos casos he intentado traducir los comandos, si estos ayudan a entender. En la práctica nadie usa los términos en castellano. Se me pueden escapar... mucho. 
 * Vamos a usar la versión de línea de comandos que es universal y permite entenderlo bien. Luego hay muchas opciones más fáciles. 
@@ -43,18 +46,16 @@ paginate: true
 
 ----
 
+### Reconoces esto?
+
+![PhD comic: "Final".doc - files are called: Final.doc, Final_rev.2.doc, FINAL_rev.6.COMMENTS.doc, FINAL_rev.8.commens5.CORRECTIONS.doc, FINAL_rev.18.comment7.corrections9.MORE.30.doc, FINAL_rev.22.comments49.corrections.10.WHYDIDICOMETOGRADSCHOOL.doc](img/phd101212s_small.gif)
+
+----
+
 ### Objetivos de aprendizaje
 
 * Comprender los beneficios de usar un sistema automático de control de versiones.
 * Comprender los fundamentos básicos del funcionamiento de Git.
-
-----
-
-### Reconoces esto?
-
-(p. ej., has trabajado en el mismo documento a la vez que otra persona?)
-
-![PhD comic: "Final".doc - files are called: Final.doc, Final_rev.2.doc, FINAL_rev.6.COMMENTS.doc, FINAL_rev.8.commens5.CORRECTIONS.doc, FINAL_rev.18.comment7.corrections9.MORE.30.doc, FINAL_rev.22.comments49.corrections.10.WHYDIDICOMETOGRADSCHOOL.doc](img/phd101212s_small.gif)
 
 ----
 
