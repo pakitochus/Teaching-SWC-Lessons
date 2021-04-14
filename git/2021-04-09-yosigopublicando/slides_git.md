@@ -194,6 +194,11 @@ gedit Marte.txt
 git status
 ```
 
+---- 
+### Modificar
+
+![A la izquierda hay un documento modificado. A la derecha hay una zona que representa los datos almacenados en `.git`. En esa zona hay dos contenedores: un área de preparación y un repositorio. Usar `git add` coloca el documento en la zona de preparación. El uso de `git commit` mueve el documento de la zona de preparación al repositorio](img/git_mac_modify.png)
+
 ----
 
 ### Qué es `git commit`?
@@ -231,14 +236,27 @@ git log
 
 ![Cantidad de archivos](img/archivos_tesis.png)
 
+---- 
+### Añadir: `git add`
+
+![A la izquierda hay un documento modificado. A la derecha hay una zona que representa los datos almacenados en `.git`. En esa zona hay dos contenedores: un área de preparación y un repositorio. Usar `git add` coloca el documento en la zona de preparación. El uso de `git commit` mueve el documento de la zona de preparación al repositorio](img/git_mac_add.png)
+
+----
+  
+### Commit: `git commit -m`
+![A la izquierda hay un documento modificado. A la derecha hay una zona que representa los datos almacenados en `.git`. En esa zona hay dos contenedores: un área de preparación y un repositorio. Usar `git add` coloca el documento en la zona de preparación. El uso de `git commit` mueve el documento de la zona de preparación al repositorio](img/git_mac_commit.png)
+
 ----
 
 ### El área de preparación (*staging area*)
 
 * El *staging area* contiene los cambios que no queremos hacer "commit".
   * (otros archivos que también se han cambiado, pero que no queremos remitir)
+
+----
   
-![A la izquierda hay un documento modificado. A la derecha hay una zona que representa los datos almacenados en `.git`. En esa zona hay dos contenedores: un área de preparación y un repositorio. Usar `git add` coloca el documento en la zona de preparación. El uso de `git commit` mueve el documento de la zona de preparación al repositorio](img/git-staging-area.png)
+### El área de preparación
+![A la izquierda hay un documento modificado. A la derecha hay una zona que representa los datos almacenados en `.git`. En esa zona hay dos contenedores: un área de preparación y un repositorio. Usar `git add` coloca el documento en la zona de preparación. El uso de `git commit` mueve el documento de la zona de preparación al repositorio](img/git_add_commit_staging.png)
 
 ----
 
@@ -320,6 +338,14 @@ git commit
 
 ----
 
+### Historial de commits
+
+
+![Imagen propia con heads identificando cada commit](img/git_history_head.png)
+
+----
+
+
 ### Historial con `git diff`
 
 * Podemos usar `git diff` para ver qué ha cambiado en un archivo para cada `commit`
@@ -343,6 +369,13 @@ git diff HEAD~2..HEAD~1 Marte.txt
 git diff
 git diff HEAD~2
 ```
+
+----
+
+### Working copy!
+
+
+![Esta vez añadimos working copy](img/git_working_copy.png)
 
 ----
 
