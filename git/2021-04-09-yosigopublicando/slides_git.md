@@ -639,22 +639,6 @@ cd /tmp/planetas
 gedit Marte.txt
 git push origin master
 ```
-
-----
-
-### El mensaje de conflicto (*conflict*)
-
-```
-To https://github.com/<collaborator>/planetas.git
- ! [rejected]        master -> master (fetch first)
-error: failed to push some refs to 'https://github.com/<collaborator>/planets.git'
-hint: Updates were rejected because the remote contains work that you do
-hint: not have locally. This is usually caused by another repository pushing
-hint: to the same ref. You may want to first integrate the remote changes
-hint: (e.g., 'git pull ...') before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-```
-
 ----
 
 ### Los cambios conflictivos
@@ -675,7 +659,30 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
   
 **Presentación**
 
+----
+
+### Consejos
+* Hacer pull frecuentemente
+* Usar ramas temáticas para separar trabajo, uniéndolas al master cuando terminen
+* Hacer comentarios mas cortos y concisos
+* Cuando sea apropiado, divide y vencerás!
+* Aclarar con tus colaboradores quién hace qué
+* Colaboración y orden en las tareas de edición
+* Convención (htmltidy) para conflictos de estilo
+
 ---
+
+## Qué nos dejamos? 
+
+---- 
+### Nos dejamos
+* Ramas y `pull request`
+* Ciencia Abierta: https://guides.github.com/activities/citable-code/
+* Licencias: `LICENSE`
+* Trabajos citables desde git: `CITATION`
+* Editores con git integrados. 
+
+--- 
 
 ## Resumiendo
 
@@ -683,7 +690,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
   * Almacena datos - guarda en repositorio OA (Zenodo/FigShare)
   * Usa GitHub para almacenar trabajo en curso: análisis de laboratorio
   * Envía el preprint a (Bio)arXiv
-* Incluso si no te gusta el *OS*, es más reproducible (y auditable)
+* Incluso si no te gusta lo abierto, es más reproducible (y auditable)
 
 ----
 
@@ -699,3 +706,9 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ### Ya estás preparado para dejar esto atrás…
 
 ![PhD comic: A directory listing with filenames like data_2010.05.28_test.dat, data_2010.05.28_re-test.dat, data_2010.05.28_re-re-test.dat, data_2010.05.28_calibrate.dat, data_2010.05.29_aaarrrgh.dat, data_2010.05.29_WTF.dat, data_2010.05.29_USETHISONE.dat](img/phd052810s.png)
+
+--- 
+
+# GRACIAS
+#### F. J. Martinez-Murcia
+![Logo The Carpentries. height:5cm](img/logos.png)
