@@ -749,8 +749,9 @@ git push origin master
 
 ## Cheatsheet 
 * `git add/rm <archivo>`
+* `git status / git log`
 * `git commit -m "mensaje"`
-* `git checkout <branch>`
+* `git checkout <version> <archivo>`
 * `git clone <repo>`
 * `git pull/push`
 
