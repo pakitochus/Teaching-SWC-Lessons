@@ -421,6 +421,13 @@ git checkout HEAD Marte.txt
 
 ----
 
+### `git checkout`
+
+* Situación: he vuelto a `HEAD~2`. Quiero continuar a partir de ahí. ¿Qué ocurre con los commits posteriores? 
+  * Desaparecen
+* Ramas -_branches_- (no incluídas en este tutorial)
+----
+
 ### Pregunta
 
 - Qué comando(s) harán que Manuela recupere la última versión remitida de su script `exprimir_datos.py` (pero ningún otro archivo)?
