@@ -736,7 +736,7 @@ git push origin master
 
 ---- 
 ### Nos dejamos
-* Ramas y `pull request`
+* Ramas, `forks` y `pull request`
 * Ciencia Abierta: https://guides.github.com/activities/citable-code/
 * Licencias: `LICENSE`
 * Trabajos citables desde git: `CITATION`
