@@ -3,8 +3,11 @@ marp: true
 theme: uncover
 paginate: true
 ---
+
+![bg 200% opacity:.1](img/Git-logo.svg)
 ## Git y Github para investigación
 #### F. J. Martinez-Murcia
+
 ![Logo The Carpentries. height:5cm](img/logos.png)
 
 ----
@@ -15,6 +18,8 @@ paginate: true
 ----
 
 ### Hace mucho tiempo...
+
+![bg cover](img/STORY-BG.jpg)
 
 * Hombre Lobo y Dracula han sido contratados para planear una misión a Marte. 
 * Hombre Lobo y Dracula viven en diferentes continentes.
@@ -33,7 +38,7 @@ paginate: true
 
 ---
 <!--
-_backgroundColor: blue
+_backgroundColor: navy
 _color: white
 -->
 ### Disclaimer
@@ -41,6 +46,8 @@ _color: white
 * Vamos a usar la versión de línea de comandos que es universal y permite entenderlo bien. Luego hay muchas opciones más fáciles. 
 
 ---
+
+![bg 200% opacity:.1](img/Git-logo.svg)
 
 ## Control de versiones con `git`
 
@@ -107,6 +114,7 @@ _color: white
 
 ---
 
+![bg 200% opacity:.1](img/Git-logo.svg)
 ## Configurando `git`
 
 ----
@@ -133,6 +141,7 @@ git config --global core.editor "gedit --wait"
 
 ---
 
+![bg 200% opacity:.1](img/Git-logo.svg)
 ## Creando un repositorio
 
 ----
@@ -170,6 +179,7 @@ git status
 
 ---
 
+![bg 200% opacity:.1](img/Git-logo.svg)
 ## Seguimiento de cambios
 
 ----
@@ -307,6 +317,7 @@ git commit
 
 ---
 
+![bg 200% opacity:.1](img/Git-logo.svg)
 ## Explorando el historial
 
 ----
@@ -440,6 +451,7 @@ git checkout HEAD Marte.txt
 
 ---
 
+![bg 200% opacity:.1](img/Git-logo.svg)
 ## Ignorando cosas
 
 ----
@@ -482,6 +494,7 @@ git add -f b.dat
 
 ---
 
+![bg 200% opacity:.1](img/Git-logo.svg)
 ## Trabajando en remoto
 
 ----
@@ -588,6 +601,7 @@ git pull origin master
 
 ---
 
+![bg 200% opacity:.1](img/Git-logo.svg)
 ## Trabajos en colaboración
 
 ----
@@ -653,6 +667,7 @@ git pull origin master
 
 ---
 
+![bg 200% opacity:.1](img/Git-logo.svg)
 ## Conflictos
 
 ----
@@ -732,6 +747,7 @@ git push origin master
 
 ---
 
+![bg 200% opacity:.1](img/Git-logo.svg)
 ## Qué nos dejamos? 
 
 ---- 
@@ -770,6 +786,7 @@ git push origin master
 
 --- 
 
+![bg 200% opacity:.1](img/Git-logo.svg)
 # GRACIAS
 #### F. J. Martinez-Murcia
 ![Logo The Carpentries. height:5cm](img/logos.png)
