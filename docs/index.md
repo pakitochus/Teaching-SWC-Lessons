@@ -5,7 +5,7 @@ _Francisco Jesús Martínez Murcia_
 
 Bienvenidos al curso de [Git y Github para investigación](https://sites.google.com/go.ugr.es/yosigopublicando/los-cursos#h.w27bxfwz4bo6). El taller que daré se podrá seguir de forma práctica o simplemente como espectador. El taller es un resumen de lo que hacemos en la Software Carpentry, podéis encontrar la lección original en: 
 
-https://swcarpentry.github.io/git-novice/
+[https://swcarpentry.github.io/git-novice/](https://swcarpentry.github.io/git-novice/)
 
 En caso de querer seguirlo de forma práctica, os informo de los pasos a instalar. 
 
@@ -30,12 +30,12 @@ Git es el sistema de control de versiones (CVS) que vamos a utilizar, ya que es 
 9. Pulsa Enter, deberías ver `SUCCESS: Specified value was saved`.
 10. Sal de la ventana de comandos escribiendo `exit` y pulsando Enter
 Si necesitas más datos, aquí hay un vídeo tutorial: 
-https://www.youtube.com/watch?v=339AEqk9c-8
+[https://www.youtube.com/watch?v=339AEqk9c-8](https://www.youtube.com/watch?v=339AEqk9c-8)
 
 
 ### MacOS
 Para macOS, instala Git para Mac descargando y ejecutando el instalador más reciente de "mavericks" desde [esta lista](http://sourceforge.net/projects/git-osx-installer/files/). Dado que el instalador no está firmado por el desarrollador, seguramente tengas que hacer click derecho (control -click) en el paquete .pkg, darle a "Abrir" y hacer clic en "Abrir" en la ventana emergente. Tras instalar git, no habrá nada en la carpeta /Aplicaciones, dado que Git es un programa de línea de comandos. Para versiones más antiguas de OS X (10.5-10.8) utiliza el instalador más reciente con la etiqueta "snow-leopard" [disponible aquí](http://sourceforge.net/projects/git-osx-installer/files/). A continuación os pongo un videotutorial: 
-https://www.youtube.com/watch?v=9LQhwETCdwY
+[https://www.youtube.com/watch?v=9LQhwETCdwY](https://www.youtube.com/watch?v=9LQhwETCdwY)
 
 
 ### Linux
