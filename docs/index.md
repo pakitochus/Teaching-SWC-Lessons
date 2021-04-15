@@ -1,37 +1,43 @@
-## Welcome to GitHub Pages
+# Git y Github para Investigación: Materiales
+_Francisco Jesús Martínez Murcia_
 
-You can use the [editor on GitHub](https://github.com/pakitochus/Teaching-SWC-Lessons/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+Bienvenidos al curso de Git y Github para investigación. El taller que daré se podrá seguir de forma práctica o simplemente como espectador. El taller es un resumen de lo que hacemos en la Software Carpentry, podéis encontrar la lección original en: 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+https://swcarpentry.github.io/git-novice/
 
-### Markdown
+En caso de querer seguirlo de forma práctica, os informo de los pasos a instalar. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Prerequisitos:
+Git es el sistema de control de versiones (CVS) que vamos a utilizar, ya que es prácticamente el estándar, y interactúa de forma sencilla con github. Necesitarás: 
 
-```markdown
-Syntax highlighted code block
+- Un navegador soportado (Chrome, Firefox, Safari, o Microsoft Edge entre otros)
+- Para algunas partes del taller debes tener cuenta en github.com. Si tienes mucha preocupación por la privacidad, se puede mantener el email privado en las instrucciones de GitHub. 
+- Un editor de texto plano. Notepad (el bloc de notas) en windows, gedit/nano/emacs en Linux, y cosas así.
+- Terminal de comandos por texto y git. Esto último os lo explico aquí
 
-# Header 1
-## Header 2
-### Header 3
+## Instalación de bash y Git
+### Windows
+1. Descarga el [instalador de git para Windows](https://gitforwindows.org/). 
+2. Sigue los pasos (siguiente, siguiente...) 
+3. Algunas opciones interesantes: usar el editor que se quiera, y opción "let git decide".
+4. Importante marcar: "Git from the command line and also from 3rd-party software" y "Use the native Windows Secure Channel Library" en las pantallas que aparezcan.
+5. Next next... 
+6. Asegúrate que en uno de los pasos está seleccionado "Git Credential Manager **Core**".
+7. Si no tienes preparada tu variable de entorno "`HOME`" (o no tienes ni idea de qué significa hulio): Abre la ventana de comandos de windows (Menú inicio, y luego busca `cmd` y pulsa Enter)
+8. Escribe lo siguiente exactamente: `setx HOME "%USERPROFILE%"`
+9. Pulsa Enter, deberías ver `SUCCESS: Specified value was saved`.
+10. Sal de la ventana de comandos escribiendo `exit` y pulsando Enter
+Si necesitas más datos, aquí hay un vídeo tutorial: 
+https://www.youtube.com/watch?v=339AEqk9c-8
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+### MacOS
+Para macOS, instala Git para Mac descargando y ejecutando el instalador más reciente de "mavericks" desde [esta lista](http://sourceforge.net/projects/git-osx-installer/files/). Dado que el instalador no está firmado por el desarrollador, seguramente tengas que hacer click derecho (control -click) en el paquete .pkg, darle a "Abrir" y hacer clic en "Abrir" en la ventana emergente. Tras instalar git, no habrá nada en la carpeta /Aplicaciones, dado que Git es un programa de línea de comandos. Para versiones más antiguas de OS X (10.5-10.8) utiliza el instalador más reciente con la etiqueta "snow-leopard" [disponible aquí](http://sourceforge.net/projects/git-osx-installer/files/). A continuación os pongo un videotutorial: 
+https://www.youtube.com/watch?v=9LQhwETCdwY
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+### Linux
+Si no tienes git instalado ya, instálalo desde el gestor de paquetes de tu distribución. En el caso de Debian/Ubuntu debería bastar con `sudo apt-get install git` y para Fedora `sudo dnf install git`.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pakitochus/Teaching-SWC-Lessons/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
