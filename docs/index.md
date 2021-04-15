@@ -1,7 +1,9 @@
-# Git y Github para Investigación: Materiales
+# Git y Github para Investigación
+## Yosigopublicando 16/04/2021
+### Materiales y Prerrequisitos
 _Francisco Jesús Martínez Murcia_
 
-Bienvenidos al curso de Git y Github para investigación. El taller que daré se podrá seguir de forma práctica o simplemente como espectador. El taller es un resumen de lo que hacemos en la Software Carpentry, podéis encontrar la lección original en: 
+Bienvenidos al curso de [Git y Github para investigación](https://sites.google.com/go.ugr.es/yosigopublicando/los-cursos#h.w27bxfwz4bo6). El taller que daré se podrá seguir de forma práctica o simplemente como espectador. El taller es un resumen de lo que hacemos en la Software Carpentry, podéis encontrar la lección original en: 
 
 https://swcarpentry.github.io/git-novice/
 
