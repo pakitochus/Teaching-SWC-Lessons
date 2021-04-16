@@ -25,7 +25,8 @@ paginate: true
 * Hombre Lobo y Dracula viven en diferentes continentes.
 * Trabajan en el mismo plan al mismo tiempo.
 * Cómo lo gestionamos?
-  * Hacemos turnos para cada archivo y mandamos copias por email?
+  * Hacemos turnos para cada archivo?
+  * mandamos copias por email?
   * Usamos google docs?
 
 ----
