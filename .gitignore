@@ -6,4 +6,3 @@
 
 # Ignore local Python virtualenv
 venv-*
-git/*/slides_git.pdf
