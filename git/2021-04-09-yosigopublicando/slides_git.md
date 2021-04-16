@@ -26,7 +26,7 @@ paginate: true
 * Trabajan en el mismo plan al mismo tiempo.
 * Cómo lo gestionamos?
   * Hacemos turnos para cada archivo?
-  * mandamos copias por email?
+  * Mandamos copias por email?
   * Usamos google docs?
 
 ----
@@ -413,7 +413,7 @@ git diff d221 Marte.txt
 **Presentación**
 
 ```
-git checkout HEAD Marte.txt 
+git checkout HEAD Marte.txt
 ```
 
 ----
@@ -526,7 +526,7 @@ git add -f b.dat
 
 ### Entrar a GitHub
 
-* Regístrate para una cuenta, si no tienes una - luego entra.
+* Regístrate para una cuenta, si no tienes una — luego entra.
 
 ![Screenshot of widdowquinn GitHub profile](img/lp_github.png)
 
@@ -590,7 +590,7 @@ git pull origin master
 
 ### Mi primer `pull`
 
-![Dos repositorios. En la parte superior, el repositorio local `planets` (perteneciente a Vlad), que contiene los archivos del área de preparación y del repositorio. En la parte inferior, el repositorio remoto `GitHub`, que contiene el mismo repositorio que el repo local - pero *no* el área de preparación](img/github_pull.png)
+![Dos repositorios. En la parte superior, el repositorio local `planets` (perteneciente a Vlad), que contiene los archivos del área de preparación y del repositorio. En la parte inferior, el repositorio remoto `GitHub`, que contiene el mismo repositorio que el repo local — pero *no* el área de preparación](img/github_pull.png)
 
 ----
 
@@ -648,7 +648,7 @@ git push origin master
 
 ### `Push` de cambios de colaboradores
 
-![Dos repositorios. En la parte superior, el repositorio local `planets` (perteneciente a Vlad), que contiene los archivos del área de preparación y del repositorio. En la parte inferior, el repositorio remoto `GitHub`, que contiene el mismo repositorio que el repo local - pero *no* el área de preparación](img/github_otros_push.png)
+![Dos repositorios. En la parte superior, el repositorio local `planets` (perteneciente a Vlad), que contiene los archivos del área de preparación y del repositorio. En la parte inferior, el repositorio remoto `GitHub`, que contiene el mismo repositorio que el repo local — pero *no* el área de preparación](img/github_otros_push.png)
 
 ----
 
@@ -764,7 +764,7 @@ git push origin master
 ## Resumiendo
 
 * GitHub y Control de versiones puede ser un cuaderno de laboratorio electrónico, parte del paradigma de *Open Science* (OS)
-  * Almacena datos - guarda en repositorio OA (Zenodo/FigShare)
+  * Almacena datos — guarda en repositorio OA (Zenodo/FigShare)
   * Usa GitHub para almacenar trabajo en curso: análisis de laboratorio
   * Envía el preprint a (Bio)arXiv
 * Incluso si no te gusta lo abierto, es más reproducible (y auditable)
