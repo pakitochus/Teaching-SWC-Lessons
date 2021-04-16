@@ -14,8 +14,7 @@ All of this work derives from the original Software and Data Carpentry lessons, 
 
 ### Git
 * **2021-09-04 #yosigopublicando**
-  * [Git lesson](./git/2021-04-09-yosigopublicando/slides/index.html)
-  * [Git notes](./git/2021-04-09-yosigopublicando/slides/speaker_notes.pdf)
+  * [Git slides](./git/2021-04-09-yosigopublicando/slides/slides_git.pdf)
 
 ### Base materials: 
 #### Git
